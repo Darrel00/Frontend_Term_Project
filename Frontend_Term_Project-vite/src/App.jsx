@@ -1,4 +1,6 @@
 import './App.css'
+import Footer from './Components/Footer.jsx';
+import Button from "./Components/Button.jsx";
 
 function App() {
   return (
@@ -31,8 +33,9 @@ function App() {
       </div>
       <div class="callToAction">
         <h2>Ready To Become a Scholar?</h2>
-        <button type="click"><a href="">Start Learning Now</a></button>
+        <Button><a href="">Start Learning Now</a></Button>
       </div>
+      <Footer />
     </body>
   )
 }

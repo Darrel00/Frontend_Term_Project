@@ -1,7 +1,28 @@
-footer {
+nav {
   background-color: #6340EE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
   color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
+  font-family: Poppins;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  min-width: fit-content;
 }

@@ -1,6 +1,6 @@
 import './Navigation.css'
 
-export default function Navigation() {
+function Navigation() {
   return (
     <nav>
         <h1>ScholarStack</h1>
@@ -10,3 +10,5 @@ export default function Navigation() {
     </nav>
   );
 }
+
+export default Navigation
