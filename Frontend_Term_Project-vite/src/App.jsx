@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <body>
+      <nav>
+        <h1>ScholarStack</h1>
+        <a href="">Sign Up or Login</a>
+      </nav>
+      <div class="intro">
+        <h2 class="introHeading">Welcome to ScholarStack! Your new studying companion.</h2>
+        <h3 class="introText">Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!</h3>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <img src="/src/assets/image1.png" alt="People gathered around a laptop" class="image1"/>
+      <div class="features">
+        <div class="flashcards">
+          <img src="/src/assets/image2.png" alt="Man working on his laptop" class="image2"/>
+          <h4 class="flashcardsHeading">Create Flashcards</h4>
+          <p class="flashcardsText">Build comprehensive flashcard decks with our intuitive editor</p>
+        </div>
+        <div class="quizzes">
+          <img src="/src/assets/image3.png" alt="Woman working on her laptop" class="image3"/>
+          <h4 class="quizzesHeading">Smart Quizzes</h4>
+          <p class="quizzesText">Test your knowledge with adaptive quiz systems</p>
+        </div>
+        <div class="study">
+          <img src="/src/assets/image4.png" alt="Woman reading a book" class="image4"/>
+          <h4 class="studyHeading">Quick Study</h4>
+          <p class="studyText">Efficient study sessions that maximize retention</p>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div class="callToAction">
+        <h2>Ready To Become a Scholar?</h2>
+        <button type="click"><a href="">Start Learning Now</a></button>
+      </div>
+      <footer>
+        <p>© 2025 ScholarStack. All rights reserved.</p>
+      </footer>
+    </body>
   )
 }
 
