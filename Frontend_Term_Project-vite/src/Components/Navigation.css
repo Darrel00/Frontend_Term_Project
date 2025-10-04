@@ -1,28 +1,24 @@
-nav {
+.navigation {
   background-color: #6340EE;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2.5rem;
   color: white;
-  font-family: Poppins;
 }
 
-nav h1 {
+.navigationLeft h1 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-nav a {
+.navigationRight a {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  margin-left: 2rem;
   text-decoration: none;
   color: white;
-  min-width: fit-content;
+  font-family: Poppins, sans-serif;
 }
