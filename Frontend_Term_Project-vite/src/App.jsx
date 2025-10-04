@@ -4,11 +4,11 @@ function App() {
   return (
     <body>
       <nav>
-        <h1>ScholarStack</h1>
+        <h1>ScholarDeck</h1>
         <a href="">Sign Up or Login</a>
       </nav>
       <div class="intro">
-        <h2 class="introHeading">Welcome to ScholarStack! Your new studying companion.</h2>
+        <h2 class="introHeading">Welcome to ScholarDeck! Your new studying companion.</h2>
         <h3 class="introText">Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!</h3>
       </div>
       <img src="/src/assets/image1.png" alt="People gathered around a laptop" class="image1"/>
@@ -34,7 +34,7 @@ function App() {
         <button type="click"><a href="">Start Learning Now</a></button>
       </div>
       <footer>
-        <p>© 2025 ScholarStack. All rights reserved.</p>
+        <p>© 2025 ScholarDeck. All rights reserved.</p>
       </footer>
     </body>
   )
