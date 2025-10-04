@@ -1,68 +1,161 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+body {
+  margin: 0;
+  font-family: Poppins;
+  background-color: #CFC4FA;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+nav {
+  background-color: #6340EE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  color: white;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
+  color: white;
+  font-family: Poppins;
 }
 
-body {
+nav a {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  min-width: fit-content;
+}
+
+.intro {
+  background-color: #CFC4FA;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.introHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-bottom: 1rem;
+}
+
+.introText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2A1B64;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.image1 {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.features {
+  background-color: #EFECFD;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+.flashcards, .quizzes, .study {
+  width: 100%;
+  margin-bottom: 6rem;
+  overflow: hidden;
+}
+
+.image2, .image4 {
+  float: left;
+  width: 45%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.flashcardsHeading, .studyHeading {
+  float: right;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+.flashcardsText, .studyText {
+  float: right;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2A1B64;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  text-align: right;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.flashcardsText{
+  width: 25rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.studyText{
+  width: 22rem;
+}
+
+.image3 {
+  float: right;
+  width: 45%;
+  height: auto;
+  margin-left: 2rem;
+}
+
+.quizzesHeading {
+  float: left;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quizzesText {
+  float: left;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2A1B64;
+  margin: 0;
+  width: 20rem;
+}
+
+.callToAction {
+  background-color: #CFC4FA;
+  text-align: center;
+  padding: 4rem 4rem;
+  color: #2A1B64;
+}
+
+.callToAction h2 {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.callToAction button {
+  background-color: #6340EE;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
