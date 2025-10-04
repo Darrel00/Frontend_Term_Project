@@ -33,9 +33,6 @@ function App() {
         <h2>Ready To Become a Scholar?</h2>
         <button type="click"><a href="">Start Learning Now</a></button>
       </div>
-      <footer>
-        <p>© 2025 ScholarDeck. All rights reserved.</p>
-      </footer>
     </body>
   )
 }
