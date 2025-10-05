@@ -25,7 +25,7 @@ a {
   font-family: Poppins;
 }
 
-nav a {
+nav span {
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;

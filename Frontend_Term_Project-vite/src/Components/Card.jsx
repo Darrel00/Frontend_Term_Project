@@ -1,3 +1,4 @@
+//NOTE REMOVE THE ANCHOR TAG ONCE FUNCTIONALITY IS ADDED
 import './Card.css';
 
 const Card = ({ word, showEdit, showDelete, onEdit, onDelete }) => {
@@ -8,7 +9,7 @@ const Card = ({ word, showEdit, showDelete, onEdit, onDelete }) => {
             {showDelete && <button className="delete-btn" onClick={onDelete}>Delete</button>}
         </div>
         <div className="card-content">
-            <h3>{word}</h3>
+            <h3><a href="/src/FlashcardsDeck.jsx">{word}</a></h3>
         </div>
         </div>
     );
