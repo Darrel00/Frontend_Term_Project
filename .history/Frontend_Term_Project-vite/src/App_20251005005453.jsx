@@ -5,7 +5,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import SignUp from './SignUp.jsx';
 import Navigation from './Components/Navigation.jsx';
 
-
 function App() {
   return (
     <div>
@@ -46,10 +45,8 @@ function App() {
       <Footer />
     </div>
     
-    
   )
 
-  
   
 }
 

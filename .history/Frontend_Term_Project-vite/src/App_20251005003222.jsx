@@ -3,8 +3,6 @@ import Footer from './Components/Footer.jsx';
 import Button from "./Components/Button.jsx";
 import { Routes, Route, Link } from "react-router-dom";
 import SignUp from './SignUp.jsx';
-import Navigation from './Components/Navigation.jsx';
-
 
 function App() {
   return (
@@ -40,16 +38,12 @@ function App() {
         <h2>Ready To Become a Scholar?</h2>
         <Button><a href="">Start Learning Now</a></Button>
       </div>
-      <Routes>
-        <Route path="/signup" element={<SignUp />} />
-      </Routes>
+      
       <Footer />
     </div>
     
-    
   )
 
-  
   
 }
 

@@ -1,10 +1,8 @@
-import './App.css';
-import Footer from './Components/Footer.jsx';
-import Button from "./Components/Button.jsx";
+import './App.css'
+import Footer from './Components/Footer.jsx'
+import Button from "./Components/Button.jsx"
 import { Routes, Route, Link } from "react-router-dom";
-import SignUp from './SignUp.jsx';
-import Navigation from './Components/Navigation.jsx';
-
+import SignUp from './SignUp.jsx'
 
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
       <Navigation />
       <nav>
         <h1>ScholarDeck</h1>
-        <Link to="/signup">Sign Up or Login</Link>
+        <Link to="/SignUp">Sign Up or Login</Link>
       </nav>
       <div class="intro">
         <h2 class="introHeading">Welcome to ScholarDeck! Your new studying companion.</h2>
@@ -42,15 +40,14 @@ function App() {
       </div>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/quizzes" element={<QuizPage />} />
       </Routes>
       <Footer />
     </div>
     
-    
   )
 
   
-  
 }
 
-export default App;
+export default App

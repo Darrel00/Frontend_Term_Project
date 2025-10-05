@@ -1,8 +1,8 @@
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
-import Button from "./Components/Button";
-import { Link } from "react-router-dom";
-import './index.css';
+import Navigation from "./Components/Navigation"
+import Footer from "./Components/Footer"
+import Button from "./Components/Button"
+import { Link } from "react-router-dom"
+import './index.css'
 
 function SignUp() {
   return (
@@ -21,7 +21,7 @@ function SignUp() {
       <Link to="/src/SignIn.jsx">Login</Link>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default SignUp;
+export default SignUp

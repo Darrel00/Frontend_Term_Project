@@ -1,10 +1,7 @@
-import './App.css';
-import Footer from './Components/Footer.jsx';
-import Button from "./Components/Button.jsx";
+import './App.css'
+import Footer from './Components/Footer.jsx'
+import Button from "./Components/Button.jsx"
 import { Routes, Route, Link } from "react-router-dom";
-import SignUp from './SignUp.jsx';
-import Navigation from './Components/Navigation.jsx';
-
 
 function App() {
   return (
@@ -41,16 +38,15 @@ function App() {
         <Button><a href="">Start Learning Now</a></Button>
       </div>
       <Routes>
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/quizzes" element={<QuizPage />} />
       </Routes>
       <Footer />
     </div>
     
-    
   )
 
   
-  
 }
 
-export default App;
+export default App

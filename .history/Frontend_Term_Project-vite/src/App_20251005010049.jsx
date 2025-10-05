@@ -4,7 +4,7 @@ import Button from "./Components/Button.jsx";
 import { Routes, Route, Link } from "react-router-dom";
 import SignUp from './SignUp.jsx';
 import Navigation from './Components/Navigation.jsx';
-
+import * as React from 'react';
 
 function App() {
   return (
@@ -46,10 +46,8 @@ function App() {
       <Footer />
     </div>
     
-    
   )
 
-  
   
 }
 
