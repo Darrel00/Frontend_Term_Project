@@ -49,12 +49,12 @@ function Home() {
 }
 
 function App() {
-  console.log("App running");
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/signup" element={<SignUp />} />
     </Routes>
+    (console.log("App running")),
   );
 }
 

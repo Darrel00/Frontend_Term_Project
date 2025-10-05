@@ -49,7 +49,6 @@ function Home() {
 }
 
 function App() {
-  console.log("App running");
   return (
     <Routes>
       <Route path="/" element={<Home />} />

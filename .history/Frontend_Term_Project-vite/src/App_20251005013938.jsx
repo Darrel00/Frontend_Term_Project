@@ -48,13 +48,15 @@ function Home() {
   );
 }
 
+console.log("App component loaded");
+
 function App() {
-  console.log("App running");
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/signup" element={<SignUp />} />
     </Routes>
+    
   );
 }
 

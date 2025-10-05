@@ -21,20 +21,20 @@ function Home() {
         <h2 className="introHeading">Welcome to ScholarDeck! Your new studying companion.</h2>
         <h3 className="introText">Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!</h3>
       </div>
-      <img src={image1} alt="People gathered around a laptop" className="image1" />
+      <img src="/src/assets/image1.png" alt="People gathered around a laptop" className="image1" />
       <div className="features">
         <div className="flashcards">
-          <img src={image2} alt="Man working on his laptop" className="image2" />
+          <img src="/src/assets/image2.png" alt="Man working on his laptop" className="image2" />
           <h4 className="flashcardsHeading">Create Flashcards</h4>
           <p className="flashcardsText">Build comprehensive flashcard decks with our intuitive editor</p>
         </div>
         <div className="quizzes">
-          <img src={image3} alt="Woman working on her laptop" className="image3" />
+          <img src="/src/assets/image3.png" alt="Woman working on her laptop" className="image3" />
           <h4 className="quizzesHeading">Smart Quizzes</h4>
           <p className="quizzesText">Test your knowledge with adaptive quiz systems</p>
         </div>
         <div className="study">
-          <img src={image4} alt="Woman reading a book" className="image4" />
+          <img src="/src/assets/image4.png" alt="Woman reading a book" className="image4" />
           <h4 className="studyHeading">Quick Study</h4>
           <p className="studyText">Efficient study sessions that maximize retention</p>
         </div>
@@ -49,7 +49,6 @@ function Home() {
 }
 
 function App() {
-  console.log("App running");
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -59,5 +58,3 @@ function App() {
 }
 
 export default App;
-
-
