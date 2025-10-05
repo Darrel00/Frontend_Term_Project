@@ -1,13 +1,12 @@
-import Navigation from "./Components/Navigation"
-import Footer from "./Components/Footer"
-import Button from "./Components/Button"
-import './index.css'
-import { Link } from "react-router-dom"
+import Navigation from "./Components/Navigation";
+import Footer from "./Components/Footer";
+import Button from "./Components/Button";
+import './Login.css';
 
 function SignUp() {
   return (
     <div>
-      <Navigation />
+      <Navigation/>
       <div className="intro">
         <h1>Boost your studying now!</h1>
       </div>
@@ -18,7 +17,7 @@ function SignUp() {
         <input type="password" placeholder="password" required />
         <Button>Create Account</Button>
       </form>
-      <Link to="/src/SignIn.jsx">Login</Link>
+      <a href="/src/SignIn.jsx">Login</a>
       <Footer />
     </div>
   )

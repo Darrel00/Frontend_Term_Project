@@ -1,7 +1,7 @@
 import Navigation from "./Components/Navigation"
 import Footer from "./Components/Footer"
 import Button from "./Components/Button"
-import './Login.css'
+import './index.css'
 
 function SignIn() {
   return (

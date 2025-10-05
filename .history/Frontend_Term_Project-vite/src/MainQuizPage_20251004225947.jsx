@@ -2,7 +2,6 @@ function QuizPage() {
   return (
     <body>
       <Navigation />
-      <Footer />
     </body>
   )
 }  

@@ -1,4 +1,3 @@
-
 function Navigation() {
   return (
     <nav className="navigation">

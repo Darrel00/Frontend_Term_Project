@@ -2,6 +2,8 @@ import './App.css'
 import Footer from './Components/Footer.jsx';
 import Button from "./Components/Button.jsx";
 import Navigation from "./Components/Navigation.jsx";
+import SignUp from './SignUp.jsx';
+import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (

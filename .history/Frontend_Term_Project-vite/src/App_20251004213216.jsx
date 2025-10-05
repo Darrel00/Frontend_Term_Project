@@ -2,10 +2,13 @@ import './App.css'
 import Footer from './Components/Footer.jsx';
 import Button from "./Components/Button.jsx";
 import Navigation from "./Components/Navigation.jsx";
+import React from 'react';
+import SignUp from './SignUp.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <body>
       {/* NOTE:DELETE COMPONENT VERSION LATER HERE FOR TESTING PURPOSES */}
       <Navigation/>
       <nav>
@@ -39,7 +42,7 @@ function App() {
         <Button><a href="">Start Learning Now</a></Button>
       </div>
       <Footer />
-    </div>
+    </body>
   )
 
   
@@ -48,4 +51,5 @@ function App() {
 
 
 export default App
+
 

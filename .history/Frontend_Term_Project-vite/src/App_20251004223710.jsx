@@ -1,11 +1,10 @@
-import './App.css'
 import Footer from './Components/Footer.jsx';
 import Button from "./Components/Button.jsx";
 import Navigation from "./Components/Navigation.jsx";
 
 function App() {
   return (
-    <div>
+    <body>
       {/* NOTE:DELETE COMPONENT VERSION LATER HERE FOR TESTING PURPOSES */}
       <Navigation/>
       <nav>
@@ -36,10 +35,10 @@ function App() {
       </div>
       <div class="callToAction">
         <h2>Ready To Become a Scholar?</h2>
-        <Button><a href="">Start Learning Now</a></Button>
+        <Button><a href="/src/SignUp.jsx">Start Learning Now</a></Button>
       </div>
       <Footer />
-    </div>
+    </body>
   )
 
   
@@ -48,4 +47,5 @@ function App() {
 
 
 export default App
+
 

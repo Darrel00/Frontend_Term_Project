@@ -1,4 +1,3 @@
-
 function Navigation() {
   return (
     <nav className="navigation">
@@ -7,7 +6,7 @@ function Navigation() {
       </div>
       <div className="navigationRight">
         <a href="/src/flashcards">Flashcards</a>
-        <a href="/src/MainQuizPage">Quiz</a>
+        <a href="/src/MainQuizPage">Qz</a>
         <a href="/src/index.html">Sign Out</a>
       </div>
     </nav>
