@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       {/* NOTE:DELETE COMPONENT VERSION LATER HERE FOR TESTING PURPOSES */}
+      
       <nav>
         <h1>ScholarDeck</h1>
         <a href="/src/SignUp.jsx">Sign Up or Login</a>

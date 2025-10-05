@@ -1,11 +1,13 @@
 import './App.css'
-import Footer from './Components/Footer.jsx'
-import Button from "./Components/Button.jsx"
+import Footer from './Components/Footer.jsx';
+import Button from "./Components/Button.jsx";
+import Navigation from "./Components/Navigation.jsx";
 
 function App() {
   return (
     <div>
       {/* NOTE:DELETE COMPONENT VERSION LATER HERE FOR TESTING PURPOSES */}
+      <Navigation/>
       <nav>
         <h1>ScholarDeck</h1>
         <a href="/src/SignUp.jsx">Sign Up or Login</a>

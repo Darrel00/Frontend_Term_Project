@@ -1,14 +1,20 @@
 import './App.css'
 import Footer from './Components/Footer.jsx'
 import Button from "./Components/Button.jsx"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       {/* NOTE:DELETE COMPONENT VERSION LATER HERE FOR TESTING PURPOSES */}
+      <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
+    </Router>
       <nav>
         <h1>ScholarDeck</h1>
-        <a href="/src/SignUp.jsx">Sign Up or Login</a>
       </nav>
       <div class="intro">
         <h2 class="introHeading">Welcome to ScholarDeck! Your new studying companion.</h2>

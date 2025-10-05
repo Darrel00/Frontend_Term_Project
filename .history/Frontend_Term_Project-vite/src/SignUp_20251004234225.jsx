@@ -17,7 +17,7 @@ function SignUp() {
         <input type="password" placeholder="password" required />
         <Button>Create Account</Button>
       </form>
-      <a href="/src/SignIn.jsx">Login</a>
+      <Link to="/src/SignIn.jsx">Login</Link>
       <Footer />
     </div>
   )

@@ -1,5 +1,4 @@
 import './Navigation.css'
-import React from "react";
 
 function Navigation() {
   return (
@@ -9,7 +8,7 @@ function Navigation() {
       </div>
       <div className="navigationRight">
         <a href="/src/flashcards">Flashcards</a>
-        <a href="/src/MainQuizPage">Quiz</a>
+        <a href="">Quiz</a>
         <a href="/src/index.html">Sign Out</a>
       </div>
     </nav>
