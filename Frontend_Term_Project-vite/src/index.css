@@ -1,7 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: Poppins;
   background-color: #CFC4FA;
+  overflow-x: hidden;
 }
 
 nav {
@@ -17,12 +24,6 @@ nav h1 {
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-family: Poppins;
 }
 
 nav span {
@@ -54,11 +55,21 @@ nav span {
   margin: 0 auto;
 }
 
-.image1 {
+.image1Container {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .features {
@@ -151,6 +162,7 @@ nav span {
 }
 
 .callToAction button {
+  font-family: Poppins;
   background-color: #6340EE;
   color: white;
   font-size: 1.25rem;

@@ -8,14 +8,17 @@
   justify-content: center;
 }
 
-.card-content {
-  font-family: Poppins, sans-serif;
+.word{
   color: #2A1B64;
+}
+
+.cardContent {
+  font-family: Poppins;
   text-align: center;
   font-size: 1.5rem;
 }
 
-.card-buttons {
+.cardButtons {
   position: absolute;
   top: 1.25rem; 
   left: 0;
@@ -25,10 +28,9 @@
   padding: 0 1.25rem; 
 }
 
-.edit-btn,
-.delete-btn {
+.editButton, .deleteButton {
   background-color: #6340EE;
-  font-family: Poppins, sans-serif;
+  font-family: Poppins;
   color: white;
   border: none;
   width: 6rem;               

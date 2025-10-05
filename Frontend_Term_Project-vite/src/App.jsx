@@ -28,9 +28,9 @@ function App() {
               Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!
             </h3>
           </div>
-
-          <img src={image1} alt="People gathered around a laptop" className="image1" />
-
+          <div className="image1Container">
+            <img src={image1} alt="People gathered around a laptop" className="image1" />
+          </div>
           <div className="features">
             <div className="flashcards">
               <img src={image2} alt="Man working on his laptop" className="image2" />
@@ -57,9 +57,7 @@ function App() {
 
           <div className="callToAction">
             <h2>Ready To Become a Scholar?</h2>
-            <Button>
               <button onClick={() => setPage('flashcards')}>Start Learning Now</button>
-            </Button>
           </div>
 
           <Footer />
