@@ -12,9 +12,7 @@ function QuizPage({ setPage }) {
       <main className="quizMain">
         <header className="quizHeader">
           <h1 className="quizTitle">Your Quizzes</h1>
-          <Button>
-            <span onClick={() => console.log("New Quiz Created")}>Create New Quiz</span>
-          </Button>
+          <Button>Create New Quiz</Button>
         </header>
 
         <section className="quizList">

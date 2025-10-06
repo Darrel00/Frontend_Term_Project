@@ -2,15 +2,11 @@ import './index.css';
 import { useState } from 'react';
 import FlashcardsPage from './Flashcards.jsx';
 import FlashcardsDeckPage from './FlashcardsDeck.jsx';
-import QuizPage from './MainQuizPage.jsx';
-import SignInPage from './SignIn.jsx';
-import SignUpPage from './SignUp.jsx';
 import Footer from './Components/Footer.jsx';
 import image1 from './assets/image1.png';
 import image2 from './assets/image2.png';
 import image3 from './assets/image3.png';
 import image4 from './assets/image4.png';
-import Navigation from './Components/Navigation.jsx';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -19,11 +15,11 @@ function App() {
     <div>
       {page === 'home' && (
         <>
-        <Navigation setPage={setPage}/>
           <nav>
             <h1>ScholarDeck</h1>
             <span onClick={() => setPage('signin')}>Sign Up or Login</span>
           </nav>
+
           <div className="intro">
             <h2 className="introHeading">
               Welcome to ScholarDeck! Your new studying companion.
@@ -61,7 +57,7 @@ function App() {
 
           <div className="callToAction">
             <h2>Ready To Become a Scholar?</h2>
-              <button onClick={() => setPage('signup')}>Start Learning Now</button>
+              <button onClick={() => setPage('quiz')}>Start Learning Now</button>
           </div>
 
           <Footer />
@@ -72,7 +68,6 @@ function App() {
       {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
       {page === 'quiz' && <QuizPage setPage={setPage} />}
       {page === 'signin' && <SignInPage setPage={setPage} />}
-      {page === 'signup' && <SignUpPage setPage={setPage} />}
     </div>
   );
 }

@@ -61,7 +61,7 @@ function App() {
 
           <div className="callToAction">
             <h2>Ready To Become a Scholar?</h2>
-              <button onClick={() => setPage('signup')}>Start Learning Now</button>
+              <button onClick={() => setPage('quiz')}>Start Learning Now</button>
           </div>
 
           <Footer />

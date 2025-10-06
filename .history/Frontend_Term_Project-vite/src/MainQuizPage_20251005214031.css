@@ -1,0 +1,18 @@
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EFECFD;
+    font-family: Poppins;
+}
+
+.quizMain {
+    flex: 1;
+  padding: 3rem 4rem;
+}
+
+.quizTitle {
+    font-size: 2.25rem;
+  font-weight: 700;
+  color: #2A1B64;
+}

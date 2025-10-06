@@ -5,7 +5,7 @@ import './SignIn.css';
 import SignUpPage from "./SignUp.jsx";
 
 function SignInPage({ setPage }) {
-  const [localPage, setLocalPage] = useState('signin');
+  const [localPage, setPage] = useState('signin');
   return (
     <div className="signinContainer">
       <Navigation setPage={setPage} />
@@ -28,7 +28,7 @@ function SignInPage({ setPage }) {
       </main>
 
       <Footer />
-      {localPage === 'signup' && <SignUpPage setPage={setLocalPage} />}
+      {localPage === 'signup' && <SignUpPage setPage={setPage} />}
     </div>
   )
 }

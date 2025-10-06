@@ -2,9 +2,6 @@ import './index.css';
 import { useState } from 'react';
 import FlashcardsPage from './Flashcards.jsx';
 import FlashcardsDeckPage from './FlashcardsDeck.jsx';
-import QuizPage from './MainQuizPage.jsx';
-import SignInPage from './SignIn.jsx';
-import SignUpPage from './SignUp.jsx';
 import Footer from './Components/Footer.jsx';
 import image1 from './assets/image1.png';
 import image2 from './assets/image2.png';
@@ -61,7 +58,7 @@ function App() {
 
           <div className="callToAction">
             <h2>Ready To Become a Scholar?</h2>
-              <button onClick={() => setPage('signup')}>Start Learning Now</button>
+              <button onClick={() => setPage('quiz')}>Start Learning Now</button>
           </div>
 
           <Footer />

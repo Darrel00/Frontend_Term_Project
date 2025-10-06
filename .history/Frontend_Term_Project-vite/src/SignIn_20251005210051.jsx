@@ -23,7 +23,7 @@ function SignInPage({ setPage }) {
             <input type="password" placeholder="password" required />
             <button>Sign In</button>
           </form>
-          <span onClick={() => setPage('signup')}>Sign up</span>
+          <span onClick={() => setLocalPage('signup')}>Sign up</span>
         </section>
       </main>
 

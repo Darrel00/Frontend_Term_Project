@@ -19,7 +19,7 @@ function SignUpPage({ setPage }) {
             <input type="email" placeholder="email" required />
             <h2 className='input-name'>Password</h2>
             <input type="password" placeholder="password" required />
-            <button className='create-account'>Create Account</button>
+            <button>Create Account</button>
           </form>
           <span className='link' onClick={() => setPage('signin')}>Login</span>
         </section>
