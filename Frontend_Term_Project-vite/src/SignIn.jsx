@@ -1,13 +1,15 @@
-import Navigation from "./Components/Navigation"
+import Navigation from "./Components/Navigation.jsx"
 import Footer from "./Components/Footer"
 import Button from "./Components/Button"
 import { Link } from "react-router-dom"
-import './Login.css'
+import { useState } from "react"
+import './index.css'
 
-function SignIn() {
+function SignInPage() {
+  const [email, setEmail] = useState('');
   return (
     <body>
-        <Navigation/>
+        
         <div className="intro">
           <h1>Welcome Back!</h1>
         </div>
@@ -16,12 +18,12 @@ function SignIn() {
           <input type="email" placeholder="email" required />
           <h3>Password</h3>
           <input type="password" placeholder="password" required />
-          <Button>Sign In</Button>
+          <button>Sign In</button>
         </form>
-        <Link to="/signup">Sign up</Link>
+        <span onClick={() => setPage('signup')}>Sign up</span>
         <Footer />
     </body>
   )
 }
 
-export default SignIn
+export default SignInPage;

@@ -4,10 +4,9 @@ import Button from "./Components/Button";
 import { Link } from "react-router-dom";
 import './index.css';
 
-function SignUp() {
+function SignUpPage() {
   return (
     <div>
-      <Navigation />
       <div className="intro">
         <h1>Boost your studying now!</h1>
       </div>
@@ -16,12 +15,12 @@ function SignUp() {
         <input type="email" placeholder="email" required />
         <h3>Password</h3>
         <input type="password" placeholder="password" required />
-        <Button>Create Account</Button>
+        <button>Create Account</button>
       </form>
-      <Link to="/signin">Login</Link>
+      <button onClick="/signin">Login</button>
       <Footer />
     </div>
   );
 }
 
-export default SignUp;
+export default SignUpPage;

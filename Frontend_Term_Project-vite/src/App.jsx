@@ -1,46 +1,75 @@
-import './App.css'
+import './index.css';
+import { useState } from 'react';
+import FlashcardsPage from './Flashcards.jsx';
+import FlashcardsDeckPage from './FlashcardsDeck.jsx';
 import Footer from './Components/Footer.jsx';
-import Button from "./Components/Button.jsx";
-import Navigation from "./Components/Navigation.jsx";
+import image1 from './assets/image1.png';
+import image2 from './assets/image2.png';
+import image3 from './assets/image3.png';
+import image4 from './assets/image4.png';
 
 function App() {
+  const [page, setPage] = useState('home');
+
   return (
-    <body>
-      {/* NOTE:DELETE COMPONENT VERSION LATER HERE FOR TESTING PURPOSES */}
-      <Navigation/>
-      <nav>
-        <h1>ScholarDeck</h1>
-        <a href="">Sign Up or Login</a>
-      </nav>
-      <div class="intro">
-        <h2 class="introHeading">Welcome to ScholarDeck! Your new studying companion.</h2>
-        <h3 class="introText">Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!</h3>
-      </div>
-      <img src="/src/assets/image1.png" alt="People gathered around a laptop" class="image1"/>
-      <div class="features">
-        <div class="flashcards">
-          <img src="/src/assets/image2.png" alt="Man working on his laptop" class="image2"/>
-          <h4 class="flashcardsHeading">Create Flashcards</h4>
-          <p class="flashcardsText">Build comprehensive flashcard decks with our intuitive editor</p>
-        </div>
-        <div class="quizzes">
-          <img src="/src/assets/image3.png" alt="Woman working on her laptop" class="image3"/>
-          <h4 class="quizzesHeading">Smart Quizzes</h4>
-          <p class="quizzesText">Test your knowledge with adaptive quiz systems</p>
-        </div>
-        <div class="study">
-          <img src="/src/assets/image4.png" alt="Woman reading a book" class="image4"/>
-          <h4 class="studyHeading">Quick Study</h4>
-          <p class="studyText">Efficient study sessions that maximize retention</p>
-        </div>
-      </div>
-      <div class="callToAction">
-        <h2>Ready To Become a Scholar?</h2>
-        <Button><a href="">Start Learning Now</a></Button>
-      </div>
-      <Footer />
-    </body>
-  )
+    <div>
+      {page === 'home' && (
+        <>
+          <nav>
+            <h1>ScholarDeck</h1>
+            <span onClick={() => setPage('signin')}>Sign Up or Login</span>
+          </nav>
+          <div className="intro">
+            <h2 className="introHeading">
+              Welcome to ScholarDeck! Your new studying companion.
+            </h2>
+            <h3 className="introText">
+              Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!
+            </h3>
+          </div>
+          <div className="image1Container">
+            <img src={image1} alt="People gathered around a laptop" className="image1" />
+          </div>
+          <div className="features">
+            <div className="flashcards">
+              <img src={image2} alt="Man working on his laptop" className="image2" />
+              <h4 className="flashcardsHeading">Create Flashcards</h4>
+              <p className="flashcardsText">
+                Build comprehensive flashcard decks with our intuitive editor
+              </p>
+            </div>
+            <div className="quizzes">
+              <img src={image3} alt="Woman working on her laptop" className="image3" />
+              <h4 className="quizzesHeading">Smart Quizzes</h4>
+              <p className="quizzesText">
+                Test your knowledge with adaptive quiz systems
+              </p>
+            </div>
+            <div className="study">
+              <img src={image4} alt="Woman reading a book" className="image4" />
+              <h4 className="studyHeading">Quick Study</h4>
+              <p className="studyText">
+                Efficient study sessions that maximize retention
+              </p>
+            </div>
+          </div>
+
+          <div className="callToAction">
+            <h2>Ready To Become a Scholar?</h2>
+              <button onClick={() => setPage('quiz')}>Start Learning Now</button>
+          </div>
+
+          <Footer />
+        </>
+      )}
+
+      {page === 'flashcards' && <FlashcardsPage setPage={setPage}/>}
+      {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
+      {page === 'quiz' && <QuizPage setPage={setPage} />}
+      {page === 'signin' && <SignInPage setPage={setPage} />}
+      {page === 'signup' && <SignUpPage setPage={setPage} />}
+    </div>
+  );
 }
 
-export default App
+export default App;

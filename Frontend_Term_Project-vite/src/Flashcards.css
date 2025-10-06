@@ -1,0 +1,31 @@
+.flashcardsContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #EFECFD;
+  font-family: Poppins;
+}
+
+.flashcardsMain {
+  flex: 1;
+  padding: 3rem 4rem;
+}
+
+.flashcardsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.flashcardsTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2A1B64;
+}
+
+.flashcardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

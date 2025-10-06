@@ -1,16 +1,12 @@
-import './Navigation.css'
+import './Navigation.css';
 
-function Navigation() {
+function Navigation({ setPage }) {
   return (
-    <nav className="navigation">
-      <div className="navigationLeft">
-        <h1>ScholarDeck</h1>
-      </div>
-      <div className="navigationRight">
-        <a href="/src/flashcards">Flashcards</a>
-        <a href="">Quiz</a>
-        <a href="/src/index.html">Sign Out</a>
-      </div>
+    <nav>
+      <h1 className="navigationLeft">ScholarDeck</h1>
+      <span className="navigationRight" onClick={() => setPage('flashcards')}>Flashcards</span>
+      <span className="navigationRight" onClick={() => setPage('quiz')}>Quiz</span>
+      <span className="navigationRight" onClick={() => setPage('logout')}>Log Out</span>
     </nav>
   );
 }
