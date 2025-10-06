@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  background-color: #CFC4FA;
+}
+
+.intro {
+  text-align: center;
+  padding: 4rem 4rem;
+  color: #2A1B64;
+}
