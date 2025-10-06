@@ -3,8 +3,6 @@ import FlashcardsPage from './Flashcards.jsx';
 import FlashcardsDeckPage from './FlashcardsDeck.jsx';
 import Footer from './Components/Footer.jsx';
 import SignUp from './SignUp.jsx';
-import Navigation from './Components/Navigation.jsx';
-import { Button } from 'react-bootstrap';
 import './index.css';
 
 function QuizPage() {

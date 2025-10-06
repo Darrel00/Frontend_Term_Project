@@ -1,12 +1,14 @@
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
-import Button from "./Components/Button";
-import { Link } from "react-router-dom";
-import './index.css';
+import Footer from "./Components/Footer"
+import { useState } from "react"
+import './index.css'
+import SignUpPage from "./SignUp.jsx"
 
 function SignUpPage() {
+  const [page, setPage] = useState('signup');
   return (
     <div>
+      {page === 'signup' && (
+      <>
       <div className="intro">
         <h1>Boost your studying now!</h1>
       </div>
@@ -17,8 +19,11 @@ function SignUpPage() {
         <input type="password" placeholder="password" required />
         <button>Create Account</button>
       </form>
-      <button onClick="/signin">Login</button>
+      <span onClick={() => setPage('signin')}>Login</span>
       <Footer />
+      </>
+        )}
+        {page === 'signup' && <SignUpPage />}
     </div>
   );
 }

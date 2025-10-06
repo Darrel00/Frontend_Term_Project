@@ -1,15 +1,14 @@
-import Navigation from "./Components/Navigation.jsx"
 import Footer from "./Components/Footer"
-import Button from "./Components/Button"
-import { Link } from "react-router-dom"
 import { useState } from "react"
 import './index.css'
+import SignUpPage from "./SignUp.jsx"
 
 function SignInPage() {
-  const [email, setEmail] = useState('');
+  const [page, setPage] = useState('signin');
   return (
-    <body>
-        
+    <div>
+      {page === 'signin' && (
+        <>
         <div className="intro">
           <h1>Welcome Back!</h1>
         </div>
@@ -22,7 +21,10 @@ function SignInPage() {
         </form>
         <span onClick={() => setPage('signup')}>Sign up</span>
         <Footer />
-    </body>
+        </>
+        )}
+        {page === 'signup' && <SignUpPage />}
+    </div>
   )
 }
 
