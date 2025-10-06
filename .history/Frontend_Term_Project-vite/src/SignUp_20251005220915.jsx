@@ -1,3 +1,4 @@
+import Navigation from './Components/Navigation.jsx';
 import Footer from "./Components/Footer.jsx";
 import './SignUp.css';
 
@@ -5,6 +6,7 @@ function SignUpPage({ setPage }) {
   
   return (
     <div className="signupContainer">
+      <Navigation setPage={setPage} />
       <main className="signupMain">
         <header className="signupHeader">
           <h1 className="signupTitle">Boost your studying now!</h1>

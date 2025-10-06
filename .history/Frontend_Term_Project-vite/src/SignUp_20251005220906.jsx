@@ -1,3 +1,4 @@
+import Navigation from './Components/Navigation.jsx';
 import Footer from "./Components/Footer.jsx";
 import './SignUp.css';
 

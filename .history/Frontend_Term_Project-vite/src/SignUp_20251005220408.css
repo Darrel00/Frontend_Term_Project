@@ -13,12 +13,13 @@
 
 .signupHeader {
     display: flex;
-    justify-content: center; /* Center the title horizontally */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
 }
 
 .signupTitle {
+    width: 640px;
     height: 72px;
     flex-shrink: 0;
     text-align: center;
@@ -30,28 +31,6 @@
     line-height: normal;
 }
 
-.signupForm {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  gap: 2rem;               
-  width: 355px;
-  height: 391px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: #EFECFD;
-  margin: 0 auto;  
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.signupForm button {
-    border: none;
-    cursor: pointer;
-    margin-top: 50px;
-}
-
 .input-name {
     color: var(--Blue-blue-900, #2A1B64);
     text-align: center;
@@ -60,18 +39,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-}
-
-input {
-    display: flex;
-    width: 355px;
-    height: 45.54px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    background: #CFC4FA;
-    padding-bottom: 5;
-    border: none;
 }
 
 .create-account { 

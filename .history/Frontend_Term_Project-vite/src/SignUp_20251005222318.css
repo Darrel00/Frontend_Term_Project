@@ -13,12 +13,13 @@
 
 .signupHeader {
     display: flex;
-    justify-content: center; /* Center the title horizontally */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5rem;
 }
 
 .signupTitle {
+    width: 640px;
     height: 72px;
     flex-shrink: 0;
     text-align: center;
@@ -42,14 +43,12 @@
   border-radius: 16px;
   background: #EFECFD;
   margin: 0 auto;  
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 
 .signupForm button {
     border: none;
     cursor: pointer;
-    margin-top: 50px;
+    gap: 10px;
 }
 
 .input-name {
@@ -71,7 +70,6 @@ input {
     flex-shrink: 0;
     background: #CFC4FA;
     padding-bottom: 5;
-    border: none;
 }
 
 .create-account { 

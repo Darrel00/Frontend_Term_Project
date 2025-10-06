@@ -17,8 +17,10 @@
     align-items: center;
     margin-bottom: 2.5rem;
 }
+}
 
 .signupTitle {
+    width: 640px;
     height: 72px;
     flex-shrink: 0;
     text-align: center;
