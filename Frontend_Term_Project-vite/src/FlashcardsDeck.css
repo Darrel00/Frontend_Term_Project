@@ -1,0 +1,75 @@
+.deckContainer {
+  background-color: #EFECFD;
+  padding: 4rem 4rem;
+  min-height: 100vh;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deckContainer h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.deckHeader {
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.deckHeader h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin: 0;
+}
+
+.customButton {
+  background-color: #6340EE;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 80rem;
+  margin-bottom: 3rem;
+}
+
+.addCardButton {
+    background-color: #EFECFD;
+    color: white;
+    width: 22rem;
+    height: 12.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: 5px dashed #CFC4FA;
+}
+
+h3{
+    color:  #2A1B64;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

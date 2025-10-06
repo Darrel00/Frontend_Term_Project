@@ -9,7 +9,9 @@ const Card = ({ word, showEdit, showDelete, onEdit, onDelete, setPage }) => {
       </div>
       <div className="cardContent">
         <h3 className="word">
-            <span onClick={() => setPage('deck')}>{word}</span>
+          <span className="card-link" onClick={() => setPage('deck')}>
+            {word}
+          </span>
         </h3>
       </div>
     </div>

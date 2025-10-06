@@ -1,8 +1,8 @@
 import './index.css';
 import { useState } from 'react';
 import FlashcardsPage from './Flashcards.jsx';
+import FlashcardsDeckPage from './FlashcardsDeck.jsx';
 import Footer from './Components/Footer.jsx';
-import Button from './Components/Button.jsx';
 import image1 from './assets/image1.png';
 import image2 from './assets/image2.png';
 import image3 from './assets/image3.png';
@@ -64,14 +64,10 @@ function App() {
         </>
       )}
 
-      {page === 'flashcards' && <FlashcardsPage />}
-
-      {page === 'login' && (
-        <div style={{ padding: '2rem' }}>
-          <h2>Page Placeholder</h2>
-          <button onClick={() => setPage('home')}>Back to Home</button>
-        </div>
-      )}
+      {page === 'flashcards' && <FlashcardsPage setPage={setPage}/>}
+      {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
+      {page === 'quiz' && <QuizPage setPage={setPage} />}
+      {page === 'login' && <LoginPage setPage={setPage} />}
     </div>
   );
 }

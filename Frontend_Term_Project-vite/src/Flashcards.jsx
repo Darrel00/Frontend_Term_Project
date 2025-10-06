@@ -23,7 +23,7 @@ function FlashcardsPage({ setPage }) {
             showEdit={false}
             showDelete={true}
             onEdit={() => console.log('Edit clicked')}
-            onDelete={() => console.log('Delete clicked')}
+            onDelete={() => console.log('Delete clicked')} 
             setPage={setPage}
           />
         </section>
