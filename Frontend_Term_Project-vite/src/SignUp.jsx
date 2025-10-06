@@ -1,13 +1,12 @@
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import Button from "./Components/Button";
-import { Link } from "react-router-dom";
 import './index.css';
 
-function SignUp() {
+function SignUp({ setCurrentPage }) {
   return (
     <div>
-      <Navigation />
+      <Navigation setCurrentPage={setCurrentPage} />
       <div className="intro">
         <h1>Boost your studying now!</h1>
       </div>
@@ -18,7 +17,7 @@ function SignUp() {
         <input type="password" placeholder="password" required />
         <Button>Create Account</Button>
       </form>
-      <Link to="/signin">Login</Link>
+      <button onClick={() => setCurrentPage('signin')}>Login</button>
       <Footer />
     </div>
   );

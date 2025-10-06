@@ -1,13 +1,12 @@
 import Navigation from "./Components/Navigation"
 import Footer from "./Components/Footer"
 import Button from "./Components/Button"
-import { Link } from "react-router-dom"
-import './Login.css'
+import './index.css';
 
-function SignIn() {
+function SignIn({ setCurrentPage }) {
   return (
-    <body>
-        <Navigation/>
+    <div>
+        <Navigation setCurrentPage={setCurrentPage}/>
         <div className="intro">
           <h1>Welcome Back!</h1>
         </div>
@@ -18,9 +17,9 @@ function SignIn() {
           <input type="password" placeholder="password" required />
           <Button>Sign In</Button>
         </form>
-        <Link to="/signup">Sign up</Link>
+        <button onClick={() => setCurrentPage('signup')}>Sign up</button>
         <Footer />
-    </body>
+    </div>
   )
 }
 

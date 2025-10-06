@@ -1,7 +1,7 @@
-function QuizPage() {
+function QuizPage({ setCurrentPage }) {
   return (
     <div>
-      <Navigation />
+      <Navigation setCurrentPage={setCurrentPage} />
       <h1>Your Quizzes</h1>
       <Button>Create New Quiz</Button>
       <div className='quiz-list'>
@@ -24,5 +24,5 @@ function QuizPage() {
       <Footer />
     </div>
   )
-}  
+}
 export default QuizPage;

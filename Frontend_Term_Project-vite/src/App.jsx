@@ -1,6 +1,8 @@
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
+import { useState } from 'react';
 import SignUp from './SignUp.jsx';
+import SignIn from './SignIn.jsx';
+import MainQuizPage from './MainQuizPage.jsx';
 import Navigation from './Components/Navigation.jsx';
 import Footer from './Components/Footer.jsx';
 import Button from "./Components/Button.jsx";
@@ -9,13 +11,13 @@ import image2 from './assets/image2.png';
 import image3 from './assets/image3.png';
 import image4 from './assets/image4.png';
 
-function Home() {
+function Home({ setCurrentPage }) {
   return (
     <>
-      <Navigation />
+      <Navigation setCurrentPage={setCurrentPage} />
       <nav>
         <h1>ScholarDeck</h1>
-        <Link to="/signup">Sign Up or Login</Link>
+        <button onClick={() => setCurrentPage('signup')}>Sign Up or Login</button>
       </nav>
       <div className="intro">
         <h2 className="introHeading">Welcome to ScholarDeck! Your new studying companion.</h2>
@@ -41,7 +43,7 @@ function Home() {
       </div>
       <div className="callToAction">
         <h2>Ready To Become a Scholar?</h2>
-        <Button><Link to="/signup">Start Learning Now</Link></Button>
+        <Button><button onClick={() => setCurrentPage('signup')}>Start Learning Now</button></Button>
       </div>
       <Footer />
     </>
@@ -50,12 +52,26 @@ function Home() {
 
 function App() {
   console.log("App running");
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/signup" element={<SignUp />} />
-    </Routes>
-  );
+  const [currentPage, setCurrentPage] = useState('home');
+
+  const renderCurrentPage = () => {
+    switch (currentPage) {
+      case 'home':
+        return <Home setCurrentPage={setCurrentPage} />;
+      case 'signup':
+        return <SignUp setCurrentPage={setCurrentPage} />;
+      case 'signin':
+        return <SignIn setCurrentPage={setCurrentPage} />;
+      case 'quiz':
+        return <MainQuizPage setCurrentPage={setCurrentPage} />;
+      case 'flashcards':
+        return <div>Flashcards Page - Coming Soon!</div>;
+      default:
+        return <Home setCurrentPage={setCurrentPage} />;
+    }
+  };
+
+  return renderCurrentPage();
 }
 
 export default App;
