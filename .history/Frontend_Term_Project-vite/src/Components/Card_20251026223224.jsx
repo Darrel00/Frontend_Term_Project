@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import './Card.css';
 
-const Card = ({ word, showEdit, showDelete, isCorrect, onEdit, onDelete, setPage, type = "default" }) => {
-  const showButtons = type !== "display";
+const Card = ({ word, showEdit, showDelete, isCorrect, onEdit, onDelete, onMarkAsAnswer, setPage, type = "default" }) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const showButtons = type !== "option";
   return (
-    <div className={`card ${isCorrect && type === "display" ? "card--correct" : ""}`}>
+    <div className={`card ${isCorrect && type === "option" ? "card--correct" : ""}`}>
       <div className="cardButtons">
         {showButtons && showEdit && <button className="editButton" onClick={onEdit}>Edit</button>}
         {showButtons && showDelete && <button className="deleteButton" onClick={onDelete}>Delete</button>}
