@@ -11,7 +11,7 @@ const Card = ({ word, showEdit, showDelete, isCorrect, onEdit, onDelete, onMarkA
       </div>
       <div className="cardContent">
         <h3 className="word">
-          <span className="card-link" onClick={() => setPage('')}>
+          <span className="card-link" onClick={() => setPage('deck')}>
             {word}
           </span>
         </h3>

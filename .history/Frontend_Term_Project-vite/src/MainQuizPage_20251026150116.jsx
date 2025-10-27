@@ -30,7 +30,7 @@ function QuizPage({ setPage }) {
             word="Graphic Design"
             showEdit={true}
             showDelete={true}
-            onEdit={() => setPage('editquiz')}
+            onEdit={() => console.log('Edit quiz clicked')}
             onDelete={() => console.log('Delete quiz clicked')}
             setPage={setPage}
           />

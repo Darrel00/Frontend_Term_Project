@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import './Card.css';
 
-const Card = ({ word, showEdit, showDelete, isCorrect, onEdit, onDelete, onMarkAsAnswer, setPage }) => {
-  const [showDropdown, setShowDropdown] = useState(false);
+const Card = ({ word, showEdit, showDelete, onEdit, onDelete, setPage }) => {
   return (
     <div className="card">
       <div className="cardButtons">
@@ -11,7 +9,7 @@ const Card = ({ word, showEdit, showDelete, isCorrect, onEdit, onDelete, onMarkA
       </div>
       <div className="cardContent">
         <h3 className="word">
-          <span className="card-link" onClick={() => setPage('')}>
+          <span className="card-link" onClick={() => setPage('deck')}>
             {word}
           </span>
         </h3>
