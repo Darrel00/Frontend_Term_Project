@@ -1,0 +1,32 @@
+.quizEditContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EFECFD;
+    font-family: Poppins;
+}
+
+.quizHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+
+.questionandoptions {
+    margin-bottom: 2.5rem;
+    margin-left: 10rem;
+}
+
+.question {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2A1B64;
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
