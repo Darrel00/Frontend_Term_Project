@@ -8,21 +8,18 @@ import './QuizQuestionPage.css';
 function QuizQuestionPage3({setPage, score, setScore}) {
     const handleOptionSelect = (isCorrect) => {
         if (isCorrect) {
-            setScore(score + 1);
+            // This is the last question, perhaps navigate back to quiz or to a results page
+            setPage('quiz');
         }
-        // Navigate to results page after last question
-        setPage('quiz-results');
     };
 
     return (
         <div className="quizQuestionContainer">
+            <Navigation setPage={setPage} />
             <main className="quizQuestionMain">
-                <Navigation setPage={setPage} />
-                <div className="backbuttonspacing">
                 <Button>
                     <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
                 </Button>
-                </div>
                 <header className="quizQuestionHeader">
                     <h1 className="quizQuestionTitle">Graphic Design - Question 3</h1>
                 </header>
@@ -55,9 +52,7 @@ function QuizQuestionPage3({setPage, score, setScore}) {
                     </div>
                 </section>
             </main>
-            <div className="quiz-footer">
             <Footer />
-            </div>
         </div>
     );
 }

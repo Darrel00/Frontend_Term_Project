@@ -1,0 +1,16 @@
+.quizQuestionTitle {
+    margin-left: 60px;
+}
+
+.quizQuestionText {
+    margin-left: 60px;
+}
+
+.quizQuestionOptions {
+    margin-left: 80px;
+    display: flex;
+}
+
+.quiz-footer {
+    margin-top: 50px;
+}

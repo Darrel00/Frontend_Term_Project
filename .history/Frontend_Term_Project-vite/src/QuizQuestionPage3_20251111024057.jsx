@@ -18,11 +18,9 @@ function QuizQuestionPage3({setPage, score, setScore}) {
         <div className="quizQuestionContainer">
             <main className="quizQuestionMain">
                 <Navigation setPage={setPage} />
-                <div className="backbuttonspacing">
                 <Button>
                     <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
                 </Button>
-                </div>
                 <header className="quizQuestionHeader">
                     <h1 className="quizQuestionTitle">Graphic Design - Question 3</h1>
                 </header>

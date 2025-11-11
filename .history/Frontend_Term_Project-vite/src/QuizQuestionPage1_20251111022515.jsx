@@ -5,48 +5,45 @@ import QuizOption from "./Components/QuizOption";
 import './QuizQuestionPage.css';
 
 
-function QuizQuestionPage3({setPage, score, setScore}) {
+function QuizQuestionPage1({setPage}) {
     const handleOptionSelect = (isCorrect) => {
         if (isCorrect) {
-            setScore(score + 1);
+            setPage('quiz-question-2');
         }
-        // Navigate to results page after last question
-        setPage('quiz-results');
     };
 
     return (
         <div className="quizQuestionContainer">
+            
             <main className="quizQuestionMain">
                 <Navigation setPage={setPage} />
-                <div className="backbuttonspacing">
                 <Button>
                     <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
                 </Button>
-                </div>
                 <header className="quizQuestionHeader">
-                    <h1 className="quizQuestionTitle">Graphic Design - Question 3</h1>
+                    <h1 className="quizQuestionTitle">Graphic Design - Question 1</h1>
                 </header>
                 <section className="quizQuestionContent">
                     <h2 className="quizQuestionText">
-                        Which file format is best for high-quality scalable graphics?
+                        Which design principle refers to the visual weight of objects in a layout?
                     </h2>
                     <div className="quizQuestionOptions">
                         <QuizOption
-                            word="PNG"
+                            word="Contrast"
                             type="quiz"
                             onSelect={handleOptionSelect}
                             isCorrect={false}
                             setPage={setPage}
                         />
                         <QuizOption
-                            word="SVG"
+                            word="Balance"
                             type="quiz"
                             onSelect={handleOptionSelect}
                             isCorrect={true}
                             setPage={setPage}
                         />
                         <QuizOption
-                            word="JPEG"
+                            word="Alignment"
                             type="quiz"
                             onSelect={handleOptionSelect}
                             isCorrect={false}
@@ -55,11 +52,9 @@ function QuizQuestionPage3({setPage, score, setScore}) {
                     </div>
                 </section>
             </main>
-            <div className="quiz-footer">
-            <Footer />
-            </div>
+            <Footer/>
         </div>
     );
 }
 
-export default QuizQuestionPage3;
+export default QuizQuestionPage1;
