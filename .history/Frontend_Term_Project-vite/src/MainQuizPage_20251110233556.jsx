@@ -5,7 +5,6 @@ import Button from './Components/Button.jsx';
 import Card from './Components/Card.jsx';
 import './MainQuizPage.css';
 import QuizEditPage from './QuizEditPage.jsx';
-import QuizCard from './Components/QuizCard.jsx';
 
 function QuizPage({ setPage }) {
   return (
@@ -16,32 +15,32 @@ function QuizPage({ setPage }) {
         <header className="quizHeader">
           <h1 className="quizTitle">Your Quizzes</h1>
           <Button>
-            <span onClick={() => setPage('quizedit')}>Create New Quiz</span>
+            <span onClick={() => console.log("New Quiz Created")}>Create New Quiz</span>
           </Button>
         </header>
 
         <section className="quizList">
-          <QuizCard
+          <Card
             word="French Vocabulary"
             showEdit={true}
             showDelete={true}
-            onEdit={() => setPage('quizedit')}
+            onEdit={() => setPage=('quizedit')}
             onDelete={() => console.log('Delete quiz clicked')}
             setPage={setPage}
           />
-          <QuizCard
+          <Card
             word="Graphic Design"
             showEdit={true}
             showDelete={true}
-            onEdit={() => setPage('quizedit')}
+            onEdit={() => console.log('Edit quiz clicked')}
             onDelete={() => console.log('Delete quiz clicked')}
             setPage={setPage}
           />
-          <QuizCard
+          <Card
             word="Coding"
             showEdit={true}
             showDelete={true}
-            onEdit={() => setPage('quizedit')}
+            onEdit={() => console.log('Edit quiz clicked')}
             onDelete={() => console.log('Delete quiz clicked')}
             setPage={setPage}
           />

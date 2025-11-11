@@ -13,9 +13,6 @@ import image3 from './assets/image3.png';
 import image4 from './assets/image4.png';
 import Navigation from './Components/Navigation.jsx';
 import QuizQuestionPage from './QuizQuestionPAge.jsx';
-import QuizQuestionPage1 from './QuizQuestionPage1.jsx';
-import QuizQuestionPage2 from './QuizQuestionPage2.jsx';
-import QuizQuestionPage3 from './QuizQuestionPage3.jsx';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -77,10 +74,7 @@ function App() {
       {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
       {page === 'quiz' && <QuizPage setPage={setPage} />}
       {page === 'quizedit' && <QuizEditPage setPage={setPage} />}
-      {page === 'quizstart' && <QuizQuestionPage1 setPage={setPage} />}
-      {page === 'quiz-question-1' && <QuizQuestionPage1 setPage={setPage} />}
-      {page === 'quiz-question-2' && <QuizQuestionPage2 setPage={setPage} />}
-      {page === 'quiz-question-3' && <QuizQuestionPage3 setPage={setPage} />}
+      {page === 'quizstart' && <QuizQuestionPage setPage={setPage} />}
       {page === 'signin' && <SignInPage setPage={setPage} />}
       {page === 'signup' && <SignUpPage setPage={setPage} />}
       

@@ -77,10 +77,7 @@ function App() {
       {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
       {page === 'quiz' && <QuizPage setPage={setPage} />}
       {page === 'quizedit' && <QuizEditPage setPage={setPage} />}
-      {page === 'quizstart' && <QuizQuestionPage1 setPage={setPage} />}
-      {page === 'quiz-question-1' && <QuizQuestionPage1 setPage={setPage} />}
-      {page === 'quiz-question-2' && <QuizQuestionPage2 setPage={setPage} />}
-      {page === 'quiz-question-3' && <QuizQuestionPage3 setPage={setPage} />}
+      {page === 'quizstart' && <QuizQuestionPage setPage={setPage} />}
       {page === 'signin' && <SignInPage setPage={setPage} />}
       {page === 'signup' && <SignUpPage setPage={setPage} />}
       

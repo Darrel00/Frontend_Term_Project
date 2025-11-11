@@ -1,0 +1,71 @@
+.addOptionButton {
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: #6340EE;
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
+
+.edit-question {
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: #6340EE;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.delete-question{
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: #6340EE;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    border: none;
+}
+
+.quizEditContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EFECFD;
+    font-family: Poppins;
+}
+
+.backButton {
+    margin-left: 3rem;
+}
+
+.quizEditHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+
+.questionandoptions {
+    margin-bottom: 2.5rem;
+    margin-left: 10rem;
+}
+
+.question {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2A1B64;
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.addCardButton {
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+}
