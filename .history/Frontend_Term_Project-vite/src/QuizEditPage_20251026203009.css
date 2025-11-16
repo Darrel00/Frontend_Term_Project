@@ -1,0 +1,13 @@
+.quizEditContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EFECFD;
+    font-family: Poppins;
+}
+
+.options {
+    display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

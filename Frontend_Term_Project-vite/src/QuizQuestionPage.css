@@ -1,0 +1,53 @@
+.quizQuestionTitle {
+    margin-left: 60px;
+}
+
+.quizQuestionText {
+    margin-left: 60px;
+}
+
+.quizQuestionOptions {
+    margin-left: 80px;
+    display: flex;
+}
+
+.quiz-footer {
+    margin-top: 450px;
+}
+
+.backbuttonspacing {
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+.resultsContainer {
+    text-align: center;
+    margin-left: 60px;
+}
+
+.scoreDisplay {
+    margin: 40px 0;
+}
+
+.score {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+}
+
+.percentage {
+    font-size: 24px;
+    color: #666;
+    margin: 10px 0 0 0;
+}
+
+.resultsMessage {
+    margin: 30px 0;
+}
+
+.resultsMessage p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+}
