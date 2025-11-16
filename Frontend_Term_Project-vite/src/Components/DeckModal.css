@@ -1,0 +1,46 @@
+.cardModal {
+    width: 74rem;
+    height: 34rem;
+    background-color: #6340EE;
+    display: flex;
+}
+
+.modalTitle {
+    color: white;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: left;
+}
+
+.saveButton {
+    width: 14rem;
+    height: 6rem;
+    flex-shrink: 0;
+    background-color: #CFC4FA;
+    color: #2A1B64;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: right;
+}
+
+.inputTitle {
+    color: white;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.textInput{
+    width: 68rem;
+    height: 4rem;
+    background: #CFC4FA;
+}
