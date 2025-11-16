@@ -1,6 +1,6 @@
-import "./Modal.css";
+import "./CardModal.css";
 
-function Modal(){
+function CardModal(){
     return (
         <div className="cardModal">
             <h1 className="modalTitle">Add New Card</h1>
@@ -15,4 +15,4 @@ function Modal(){
     );
 }
 
-export default Modal
+export default CardModal

@@ -3,7 +3,7 @@ import Navigation from "./Components/Navigation.jsx";
 import Button from "./Components/Button.jsx";
 import Card from "./Components/Card.jsx";
 import Footer from "./Components/Footer.jsx";
-import Modal from "./Components/Modal.jsx";
+import CardModal from "./Components/CardModal.jsx";
 
 function FlashcardsDeckPage({setPage}){
     return(
