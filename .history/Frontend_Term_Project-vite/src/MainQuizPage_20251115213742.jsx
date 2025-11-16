@@ -21,8 +21,17 @@ function QuizPage({ setPage }) {
         </header>
 
         <section className="quizList">
+         
           <QuizCard
             word="Graphic Design"
+            showEdit={true}
+            showDelete={true}
+            onEdit={() => setPage('quizedit')}
+            onDelete={() => console.log('Delete quiz clicked')}
+            setPage={setPage}
+          />
+          <QuizCard
+            word="Coding"
             showEdit={true}
             showDelete={true}
             onEdit={() => setPage('quizedit')}

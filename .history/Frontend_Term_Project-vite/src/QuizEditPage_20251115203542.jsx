@@ -134,7 +134,7 @@ function QuizEditPage({setPage}) {
         <Navigation setPage={setPage} />
         <main className="quizEditMain">
             <Button>
-                <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
+                <span onClick={() => setPage('quiz') } style={{ right: '20'}}>Back to Quizzes</span>
             </Button>
             <header className="quizEditHeader">
                 <h1 className="quizEditTitle">Graphic Design</h1>

@@ -3,10 +3,6 @@ import './Card.css';
 const QuizCard = ({ word, showEdit, showDelete, onEdit, onDelete, setPage }) => {
   return (
     <div className="card">
-      <div className="cardButtons">
-        {showEdit && <button className="editButton" onClick={onEdit}>Edit</button>}
-        {showDelete && <button className="deleteButton" onClick={onDelete}>Delete</button>}
-      </div>
       <div className="cardContent">
         <h3 className="word">
           <span className="card-link" onClick={() => setPage('quizstart')}>
@@ -14,7 +10,10 @@ const QuizCard = ({ word, showEdit, showDelete, onEdit, onDelete, setPage }) => 
           </span>
         </h3>
       </div>
-      
+      <div className="cardButtons">
+        {showEdit && <button className="editButton" onClick={onEdit}>Edit</button>}
+        {showDelete && <button className="deleteButton" onClick={onDelete}>Delete</button>}
+      </div>
     </div>
   );
 };
