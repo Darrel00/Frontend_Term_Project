@@ -8,9 +8,17 @@ import QuizOption from './Components/QuizOption';
 import OptionEditModal from './Components/OptionEditModal';
 import QuestionEditModal from './Components/QuestionEditModal';
 
-function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
-  const [questions, setQuestions] = useState(quiz ? quiz.questions : []);
-  const [quizTitle, setQuizTitle] = useState(quiz ? quiz.title : 'Quiz Title');
+function NewQuizCreate({setPage, addQuiz}) {
+  const [questions, setQuestions] = useState([
+    {
+      text: `Question 1: New Question`,
+      options: [
+        { text: 'Option 1', isCorrect: true },
+        { text: 'Option 2', isCorrect: false },
+        { text: 'Option 3', isCorrect: false }
+      ]
+    }
+  ]);
 
   const [modalState, setModalState] = useState({
     isOpen: false,
@@ -25,6 +33,8 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
     questionIndex: null,
     text: ''
   });
+
+  const [quizTitle, setQuizTitle] = useState('New Quiz');
 
   const addQuestion = () => {
     const newQuestion = {
@@ -102,11 +112,11 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
   };
 
   const saveQuiz = () => {
-    const updatedQuiz = {
+    const newQuiz = {
       title: quizTitle,
       questions: questions
     };
-    onUpdateQuiz(updatedQuiz);
+    addQuiz(newQuiz);
     setPage('quiz');
   };
 
@@ -114,19 +124,21 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
     <div className="quizEditContainer">
         <Navigation setPage={setPage} />
         <main className="quizEditMain">
+          <div className='backbuttonspacing'>
             <Button>
                 <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
             </Button>
+            </div>
+            
             <header className="quizEditHeader">
-                <h1>Quiz Title:
-                  <input
-                    type="text"
-                    value={quizTitle}
-                    onChange={(e) => setQuizTitle(e.target.value)}
-                    className="quizEditTitle"
-                    placeholder="Enter Quiz Title"
-                  />
-                </h1>
+              <h1>Quiz Title:</h1>
+                <input
+                  type="text"
+                  value={quizTitle}
+                  onChange={(e) => setQuizTitle(e.target.value)}
+                  className="quizEditTitle"
+                  placeholder="Enter Quiz Title"
+                />
                 <Button>
                     <span onClick={saveQuiz}>Save Quiz</span>
                 </Button>
@@ -180,4 +192,4 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
   );
 }
 
-export default QuizEditPage;
+export default NewQuizCreate;

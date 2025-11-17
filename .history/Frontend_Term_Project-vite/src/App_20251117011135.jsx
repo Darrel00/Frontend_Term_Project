@@ -97,7 +97,7 @@ function App() {
       {page === 'quiz-question-1' && <QuizQuestionPage1 setPage={setPage} score={score} setScore={setScore} />}
       {page === 'quiz-question-2' && <QuizQuestionPage2 setPage={setPage} score={score} setScore={setScore} />}
       {page === 'quiz-question-3' && <QuizQuestionPage3 setPage={setPage} score={score} setScore={setScore} />}
-      {page === 'quiz-results' && <QuizResultsPage setPage={setPage} score={score} setScore={setScore} quiz={quizzes[currentQuizIndex]} />}
+      {page === 'quiz-results' && <QuizResultsPage setPage={setPage} score={score} setScore={setScore} />}
       {page === 'newquiz' && <NewQuizCreate setPage={setPage} addQuiz={addQuiz} />}
       {page === 'signin' && <SignInPage setPage={setPage} />}
       {page === 'signup' && <SignUpPage setPage={setPage} />}

@@ -102,12 +102,7 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
   };
 
   const saveQuiz = () => {
-    const updatedQuiz = {
-      title: quizTitle,
-      questions: questions
-    };
-    onUpdateQuiz(updatedQuiz);
-    setPage('quiz');
+    console.log('Quiz Saved', questions);
   };
 
   return (
@@ -118,15 +113,7 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
                 <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
             </Button>
             <header className="quizEditHeader">
-                <h1>Quiz Title:
-                  <input
-                    type="text"
-                    value={quizTitle}
-                    onChange={(e) => setQuizTitle(e.target.value)}
-                    className="quizEditTitle"
-                    placeholder="Enter Quiz Title"
-                  />
-                </h1>
+                <h1 className="quizEditTitle">Graphic Design</h1>
                 <Button>
                     <span onClick={saveQuiz}>Save Quiz</span>
                 </Button>

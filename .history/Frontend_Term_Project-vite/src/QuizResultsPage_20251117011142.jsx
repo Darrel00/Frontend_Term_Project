@@ -9,7 +9,7 @@ function QuizResultsPage({ score, setPage, setScore, quiz }) {
 
     const handleRestartQuiz = () => {
         setScore(0);
-        setPage('quizstart');
+        setPage('quiz-question-1');
     };
 
     return (

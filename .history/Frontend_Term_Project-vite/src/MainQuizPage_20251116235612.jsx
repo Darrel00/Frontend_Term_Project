@@ -7,12 +7,7 @@ import QuizEditPage from './QuizEditPage.jsx';
 import NewQuizCreate from './NewQuizCreate.jsx';
 import QuizCard from './Components/QuizCard.jsx';
 
-function QuizPage({ setPage, quizzes, setCurrentQuizIndex, setQuizzes }) {
-
-  const deleteQuiz = (index) => {
-    const newQuizzes = quizzes.filter((_, i) => i !== index);
-    setQuizzes(newQuizzes);
-  };
+function QuizPage({ setPage, quizzes, setCurrentQuizIndex }) {
   return (
     <div className="quizContainer">
       <Navigation setPage={setPage} />
@@ -32,9 +27,8 @@ function QuizPage({ setPage, quizzes, setCurrentQuizIndex, setQuizzes }) {
               word={quiz.title}
               showEdit={true}
               showDelete={true}
-              onEdit={() => { setCurrentQuizIndex(index); setPage('quizedit'); }}
-              onDelete={() => deleteQuiz(index)}
-              onClick={() => { setCurrentQuizIndex(index); setPage('quizstart'); }}
+              onEdit={() => setPage('quizedit')}
+              onDelete={() => console.log('Delete quiz clicked')}
               setPage={setPage}
             />
           ))}

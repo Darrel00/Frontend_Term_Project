@@ -9,8 +9,32 @@ import OptionEditModal from './Components/OptionEditModal';
 import QuestionEditModal from './Components/QuestionEditModal';
 
 function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
-  const [questions, setQuestions] = useState(quiz ? quiz.questions : []);
-  const [quizTitle, setQuizTitle] = useState(quiz ? quiz.title : 'Quiz Title');
+  const [questions, setQuestions] = useState([
+    {
+      text: 'Question 1: Which design principle refers to the visual weight of objects in a layout?',
+      options: [
+        { text: 'Contrast', isCorrect: false },
+        { text: 'Balance', isCorrect: true },
+        { text: 'Alignment', isCorrect: false }
+      ]
+    },
+    {
+      text: 'Question 2: Which color model is used for digital screens?',
+      options: [
+        { text: 'RGB', isCorrect: true },
+        { text: 'CMYK', isCorrect: false },
+        { text: 'Pantone', isCorrect: false }
+      ]
+    },
+    {
+      text: 'Question 3: Which file format is best for high-quality scalable graphics?',
+      options: [
+        { text: 'PNG', isCorrect: false },
+        { text: 'SVG', isCorrect: true },
+        { text: 'JPEG', isCorrect: false }
+      ]
+    }
+  ]);
 
   const [modalState, setModalState] = useState({
     isOpen: false,
@@ -102,12 +126,7 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
   };
 
   const saveQuiz = () => {
-    const updatedQuiz = {
-      title: quizTitle,
-      questions: questions
-    };
-    onUpdateQuiz(updatedQuiz);
-    setPage('quiz');
+    console.log('Quiz Saved', questions);
   };
 
   return (
@@ -118,15 +137,7 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
                 <span onClick={() => setPage('quiz')}>Back to Quizzes</span>
             </Button>
             <header className="quizEditHeader">
-                <h1>Quiz Title:
-                  <input
-                    type="text"
-                    value={quizTitle}
-                    onChange={(e) => setQuizTitle(e.target.value)}
-                    className="quizEditTitle"
-                    placeholder="Enter Quiz Title"
-                  />
-                </h1>
+                <h1 className="quizEditTitle">Graphic Design</h1>
                 <Button>
                     <span onClick={saveQuiz}>Save Quiz</span>
                 </Button>

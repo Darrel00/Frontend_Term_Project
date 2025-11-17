@@ -102,12 +102,7 @@ function QuizEditPage({setPage, quiz, onUpdateQuiz}) {
   };
 
   const saveQuiz = () => {
-    const updatedQuiz = {
-      title: quizTitle,
-      questions: questions
-    };
-    onUpdateQuiz(updatedQuiz);
-    setPage('quiz');
+    console.log('Quiz Saved', questions);
   };
 
   return (

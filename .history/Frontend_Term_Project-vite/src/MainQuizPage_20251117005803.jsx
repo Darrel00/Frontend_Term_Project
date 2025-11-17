@@ -34,7 +34,6 @@ function QuizPage({ setPage, quizzes, setCurrentQuizIndex, setQuizzes }) {
               showDelete={true}
               onEdit={() => { setCurrentQuizIndex(index); setPage('quizedit'); }}
               onDelete={() => deleteQuiz(index)}
-              onClick={() => { setCurrentQuizIndex(index); setPage('quizstart'); }}
               setPage={setPage}
             />
           ))}
