@@ -18,7 +18,6 @@
 .saveButton {
     width: 14rem;
     height: 6rem;
-    flex-shrink: 0;
     background-color: #CFC4FA;
     color: #2A1B64;
     text-align: center;

@@ -7,7 +7,7 @@ function DeckModal(){
             <button className="saveButton">Save</button>
             <form className="modalForm">
                 <h2 className="inputTitle">Deck Name</h2>
-                <input className="textInput" type="text"></input>
+                <input className="textInput" type="text" required="yes"></input>
             </form>
         </div>
     );

@@ -7,9 +7,9 @@ function CardModal(){
             <button className="saveButton">Save</button>
             <form className="modalForm">
                 <h2 className="inputTitle">Front Side</h2>
-                <input className="textInput" type="text"></input>
+                <input className="textInput" type="text" required="yes"></input>
                 <h2 className="inputTitle">Back Side</h2>
-                <input className="textInput" type="text"></input>
+                <input className="textInput" type="text"required="yes"></input>
             </form>
         </div>
     );
