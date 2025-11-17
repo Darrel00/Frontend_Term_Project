@@ -2,6 +2,7 @@ import Navigation from './Components/Navigation.jsx';
 import Button from './Components/Button.jsx';
 import Card from './Components/Card.jsx';
 import Footer from './Components/Footer.jsx';
+import DeckModal from "./Components/DeckModal.jsx;"
 import './Flashcards.css';
 
 function FlashcardsPage({ setPage }) {
