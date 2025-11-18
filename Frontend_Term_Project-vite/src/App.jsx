@@ -14,12 +14,13 @@ import Navigation from './Components/Navigation.jsx';
 
 function App() {
   const [page, setPage] = useState('home');
+  const [activeDeck, setActiveDeck] = useState(null);
 
   return (
     <div>
       {page === 'home' && (
         <>
-        <Navigation setPage={setPage}/>
+          <Navigation setPage={setPage} />
           <nav>
             <h1>ScholarDeck</h1>
             <span onClick={() => setPage('signin')}>Login</span>
@@ -61,15 +62,19 @@ function App() {
 
           <div className="callToAction">
             <h2>Ready To Become a Scholar?</h2>
-              <button onClick={() => setPage('signup')}>Start Learning Now</button>
+            <button onClick={() => setPage('signup')}>Start Learning Now</button>
           </div>
 
           <Footer />
         </>
       )}
 
-      {page === 'flashcards' && <FlashcardsPage setPage={setPage}/>}
-      {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
+      {page === 'flashcards' && (
+        <FlashcardsPage setPage={setPage} setActiveDeck={setActiveDeck} />
+      )}
+      {page === 'deck' && activeDeck && (
+        <FlashcardsDeckPage setPage={setPage} activeDeck={activeDeck} />
+      )}
       {page === 'quiz' && <QuizPage setPage={setPage} />}
       {page === 'signin' && <SignInPage setPage={setPage} />}
       {page === 'signup' && <SignUpPage setPage={setPage} />}

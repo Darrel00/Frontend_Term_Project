@@ -1,6 +1,6 @@
 import './Card.css';
 
-const Card = ({ word, showEdit, showDelete, onEdit, onDelete, setPage }) => {
+const Card = ({ word, showEdit, showDelete, showView, onEdit, onDelete, setPage }) => {
   return (
     <div className="card">
       <div className="cardButtons">
@@ -8,12 +8,9 @@ const Card = ({ word, showEdit, showDelete, onEdit, onDelete, setPage }) => {
         {showDelete && <button className="deleteButton" onClick={onDelete}>Delete</button>}
       </div>
       <div className="cardContent">
-        <h3 className="word">
-          <span className="card-link" onClick={() => setPage('deck')}>
-            {word}
-          </span>
-        </h3>
+        <h3 className="word">{word}</h3>
       </div>
+      {showView && <button className="viewButton" onClick={setPage}>View</button>}
     </div>
   );
 };
