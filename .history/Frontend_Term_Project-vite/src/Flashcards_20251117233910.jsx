@@ -60,17 +60,17 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
         </header>
         <section className="flashcardsList">
           {decks.map((deck, index) => (
-            <Card
-              key={index}
-              word={deck}
-              showEdit={false}
-              showDelete={true}
-              onEdit={() => {}}
-              onDelete={() => handleDeleteDeck(index)}
-              setPage={() => handleOpenDeck(deck)}
-              type="default"
-            />
-          ))}
+          <Card
+            key={index}
+            word={deck}
+            showEdit={false}
+            showDelete={true}
+            onEdit={() => {}}
+            onDelete={() => handleDeleteDeck(index)}
+            setPage={() => handleOpenDeck(deck)}
+            type="default"
+          />
+        ))}
         </section>
       </main>
       <Footer />

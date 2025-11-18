@@ -23,6 +23,7 @@ function QuizTaker({ setPage, quiz, score, setScore }) {
     }
   };
 
+  // ✅ Use useEffect to navigate when quiz is completed
   useEffect(() => {
     if (quizCompleted) {
       setPage('quiz-results');

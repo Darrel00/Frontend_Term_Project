@@ -38,10 +38,13 @@ function App() {
     <div>
       {page === 'home' && (
         <>
+<<<<<<< HEAD
         <Navigation setPage={setPage}/>
           {/* <nav>
+=======
           <Navigation setPage={setPage} />
           <nav>
+>>>>>>> flashcard-branch
             <h1>ScholarDeck</h1>
             <span onClick={() => setPage('signin')}>Login</span>
           </nav> */}
@@ -89,20 +92,26 @@ function App() {
         </>
       )}
 
-
-      {page === 'flashcards' && <FlashcardsPage setPage={setPage} setActiveDeck={setActiveDeck} />}
+<<<<<<< HEAD
+      {page === 'flashcards' && <FlashcardsPage setPage={setPage}/>}
       {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
       {page === 'quiz' && <QuizPage setPage={setPage} quizzes={quizzes} setCurrentQuizIndex={setCurrentQuizIndex} setQuizzes={setQuizzes} />}
       {page === 'quizedit' && <QuizEditPage setPage={setPage} quiz={quizzes[currentQuizIndex]} onUpdateQuiz={(updatedQuiz) => updateQuiz(currentQuizIndex, updatedQuiz)} />}
       {page === 'quizstart' && <QuizTaker setPage={setPage} quiz={quizzes[currentQuizIndex]} score={score} setScore={setScore} />}
+      {page === 'quiz-question-1' && <QuizQuestionPage1 setPage={setPage} score={score} setScore={setScore} />}
+      {page === 'quiz-question-2' && <QuizQuestionPage2 setPage={setPage} score={score} setScore={setScore} />}
+      {page === 'quiz-question-3' && <QuizQuestionPage3 setPage={setPage} score={score} setScore={setScore} />}
       {page === 'quiz-results' && <QuizResultsPage setPage={setPage} score={score} setScore={setScore} quiz={quizzes[currentQuizIndex]} />}
       {page === 'newquiz' && <NewQuizCreate setPage={setPage} addQuiz={addQuiz} />}
+=======
       {page === 'flashcards' && (
         <FlashcardsPage setPage={setPage} setActiveDeck={setActiveDeck} />
       )}
       {page === 'deck' && activeDeck && (
         <FlashcardsDeckPage setPage={setPage} activeDeck={activeDeck} />
       )}
+      {page === 'quiz' && <QuizPage setPage={setPage} />}
+>>>>>>> flashcard-branch
       {page === 'signin' && <SignInPage setPage={setPage} />}
       {page === 'signup' && <SignUpPage setPage={setPage} />}
       

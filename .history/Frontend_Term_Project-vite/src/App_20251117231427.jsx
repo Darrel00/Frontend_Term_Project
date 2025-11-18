@@ -89,8 +89,7 @@ function App() {
         </>
       )}
 
-
-      {page === 'flashcards' && <FlashcardsPage setPage={setPage} setActiveDeck={setActiveDeck} />}
+      {page === 'flashcards' && <FlashcardsPage setPage={setPage}/>}
       {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
       {page === 'quiz' && <QuizPage setPage={setPage} quizzes={quizzes} setCurrentQuizIndex={setCurrentQuizIndex} setQuizzes={setQuizzes} />}
       {page === 'quizedit' && <QuizEditPage setPage={setPage} quiz={quizzes[currentQuizIndex]} onUpdateQuiz={(updatedQuiz) => updateQuiz(currentQuizIndex, updatedQuiz)} />}
@@ -103,6 +102,7 @@ function App() {
       {page === 'deck' && activeDeck && (
         <FlashcardsDeckPage setPage={setPage} activeDeck={activeDeck} />
       )}
+      {page === 'quiz' && <QuizPage setPage={setPage} />}
       {page === 'signin' && <SignInPage setPage={setPage} />}
       {page === 'signup' && <SignUpPage setPage={setPage} />}
       

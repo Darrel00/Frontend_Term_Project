@@ -67,8 +67,8 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
               showDelete={true}
               onEdit={() => {}}
               onDelete={() => handleDeleteDeck(index)}
-              setPage={() => handleOpenDeck(deck)}
-              type="default"
+              onClick={() => handleOpenDeck(deck)}
+              setPage={setPage}
             />
           ))}
         </section>

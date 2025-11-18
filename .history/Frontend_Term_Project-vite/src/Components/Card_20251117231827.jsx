@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Card.css';
 
-const Card = ({ word, showEdit, showDelete, isCorrect, showView, onEdit, onDelete, setPage, type = "default" }) => {
+const Card = ({ word, showEdit, showDelete, isCorrect, onEdit, onDelete, setPage, type = "default" }) => {
   const showButtons = type !== "display";
   return (
     <div className={`card ${isCorrect && type === "display" ? "card--correct" : ""}`}>
@@ -11,7 +11,7 @@ const Card = ({ word, showEdit, showDelete, isCorrect, showView, onEdit, onDelet
       </div>
       <div className="cardContent">
         <h3 className="word">
-          <span className="card-link" onClick={setPage}>
+          <span className="card-link" onClick={() => setPage('')}>
             {word}
           </span>
         </h3>

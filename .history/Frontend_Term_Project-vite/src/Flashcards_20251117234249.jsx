@@ -73,7 +73,7 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
           ))}
         </section>
       </main>
-      <Footer />
+     
     </div>
   );
 }
