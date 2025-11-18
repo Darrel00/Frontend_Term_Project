@@ -7,7 +7,6 @@
     padding: 10px;
 }
 
-
 .edit-question {
     font-family: Poppins;
     font-weight: bold;
@@ -16,7 +15,7 @@
     font-size: large;
     padding: 10px;
     border: none;
-    border-radius: 10px;
+    
 }
 
 .delete-question{
@@ -29,7 +28,6 @@
     border: none;
     margin-left: 10px;
     margin-bottom: 60px;
-    border-radius: 10px;
 }
 
 .quizEditContainer {
@@ -70,8 +68,7 @@
 }
 
 .addOptionButton {
-    border-radius: 20px;
-    border: none;
+    border-radius: 50px;
 }
 
 .addCardButton {

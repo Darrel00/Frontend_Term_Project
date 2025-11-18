@@ -1,7 +1,7 @@
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import Button from "./Components/Button";
-import './QuizQuestionPage.css'; 
+import './QuizQuestionPage.css'; // Reuse existing CSS
 
 function QuizResultsPage({ score, setPage, setScore, quiz }) {
     const totalQuestions = quiz.questions.length;
@@ -27,7 +27,7 @@ function QuizResultsPage({ score, setPage, setScore, quiz }) {
 
                 <section className="quizQuestionContent">
                     <div className="resultsContainer">
-                        <h2 className="quizScoreText">Your Score</h2>
+                        <h2 className="quizQuestionText">Your Score</h2>
                         <div className="scoreDisplay">
                             <h3 className="score">{score} / {totalQuestions}</h3>
                             <p className="percentage">{percentage}%</p>

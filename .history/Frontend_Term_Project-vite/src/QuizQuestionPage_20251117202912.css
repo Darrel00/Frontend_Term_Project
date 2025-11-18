@@ -16,7 +16,7 @@
 }
 
 .quiz-footer {
-    margin-top: 150px;
+    margin-top: 450px;
 }
 
 .backbuttonspacing {
@@ -36,13 +36,13 @@
 
 .score {
     font-size: 48px;
-    color: black;
+    color: #333;
     margin: 0;
 }
 
 .percentage {
     font-size: 24px;
-    color: black;
+    color: #666;
     margin: 10px 0 0 0;
 }
 
@@ -52,6 +52,6 @@
 
 .resultsMessage p {
     font-size: 18px;
-    color: black;
+    color: #555;
     margin: 0;
 }

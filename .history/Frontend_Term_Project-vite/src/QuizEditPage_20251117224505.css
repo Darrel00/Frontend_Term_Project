@@ -7,6 +7,9 @@
     padding: 10px;
 }
 
+.quizNameInput {
+    color: #2A1B64;
+}
 
 .edit-question {
     font-family: Poppins;

@@ -1,7 +1,7 @@
 import Navigation from "./Components/Navigation";
 import Footer from "./Components/Footer";
 import Button from "./Components/Button";
-import './QuizQuestionPage.css'; 
+import './QuizQuestionPage.css'; // Reuse existing CSS
 
 function QuizResultsPage({ score, setPage, setScore, quiz }) {
     const totalQuestions = quiz.questions.length;

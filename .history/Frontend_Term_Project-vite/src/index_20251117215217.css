@@ -1,0 +1,174 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Poppins;
+  background-color: #CFC4FA;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: #6340EE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  color: white;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+nav span {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  min-width: fit-content;
+}
+
+.intro {
+  background-color: #CFC4FA;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.introHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-bottom: 1rem;
+}
+
+.introText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2A1B64;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.image1Container {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.features {
+  background-color: #EFECFD;
+  padding: 4rem;
+  overflow: hidden;
+}
+
+.flashcards, .quizzes, .study {
+  width: 100%;
+  margin-bottom: 6rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image2, .image4 {
+  float: left;
+  width: 45%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.flashcardsHeading, .studyHeading {
+  float: right;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+.flashcardsText, .studyText {
+  float: right;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2A1B64;
+  margin: 0;
+  text-align: right;
+}
+
+.flashcardsText{
+  width: 25rem;
+}
+
+.studyText{
+  width: 22rem;
+}
+
+.image3 {
+  float: right;
+  width: 45%;
+  height: auto;
+  margin-left: 2rem;
+}
+
+.quizzesHeading {
+  float: left;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2A1B64;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quizzesText {
+  float: left;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2A1B64;
+  margin: 0;
+  width: 20rem;
+}
+
+.callToAction {
+  background-color: #CFC4FA;
+  text-align: center;
+  padding: 4rem 4rem;
+  color: #2A1B64;
+}
+
+.callToAction h2 {
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.callToAction button {
+  font-family: Poppins;
+  background-color: #6340EE;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
+  cursor: pointer;
+}
