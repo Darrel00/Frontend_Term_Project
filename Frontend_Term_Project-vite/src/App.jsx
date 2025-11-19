@@ -21,10 +21,6 @@ function App() {
       {page === 'home' && (
         <>
           <Navigation setPage={setPage} />
-          <nav>
-            <h1>ScholarDeck</h1>
-            <span onClick={() => setPage('signin')}>Login</span>
-          </nav>
           <div className="intro">
             <h2 className="introHeading">
               Welcome to ScholarDeck! Your new studying companion.

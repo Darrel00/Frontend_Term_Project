@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 function FlashcardsPage({ setPage, setActiveDeck }) {
   const [decks, setDecks] = useState(() => {
     const saved = localStorage.getItem("decks");
-    return saved ? JSON.parse(saved) : ["French Vocabulary"];
+    return saved ? JSON.parse(saved) : ["New Flashcard Deck"];
   });
 
   const [showDeckModal, setShowDeckModal] = useState(false);
@@ -65,6 +65,7 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
               word={deck}
               showEdit={false}
               showDelete={true}
+              showView={true}
               onEdit={() => {}}
               onDelete={() => handleDeleteDeck(index)}
               setPage={() => handleOpenDeck(deck)}
