@@ -5,7 +5,7 @@ import Footer from './Components/Footer.jsx';
 import DeckModal from './Components/DeckModal.jsx';
 import './Flashcards.css';
 import { useState, useEffect } from 'react';
-
+ 
 function FlashcardsPage({ setPage, setActiveDeck }) {
   const [decks, setDecks] = useState(() => {
     const saved = localStorage.getItem("decks");

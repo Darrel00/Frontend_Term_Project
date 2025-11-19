@@ -13,6 +13,6 @@ const Card = ({ word, showEdit, showDelete, showView, onEdit, onDelete, setPage 
       {showView && <button className="viewButton" onClick={setPage}>View</button>}
     </div>
   );
-};
+}; 
 
 export default Card;

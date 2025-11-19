@@ -11,7 +11,7 @@ import image2 from './assets/image2.png';
 import image3 from './assets/image3.png';
 import image4 from './assets/image4.png';
 import Navigation from './Components/Navigation.jsx';
-
+ 
 function App() {
   const [page, setPage] = useState('home');
   const [activeDeck, setActiveDeck] = useState(null);
