@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 function FlashcardsPage({ setPage, setActiveDeck }) {
   const [decks, setDecks] = useState(() => {
     const saved = localStorage.getItem("decks");
-    return saved ? JSON.parse(saved) : ["New Flashcard Deck"];
+    return saved ? JSON.parse(saved) : [""];
   });
 
   const [showDeckModal, setShowDeckModal] = useState(false);
