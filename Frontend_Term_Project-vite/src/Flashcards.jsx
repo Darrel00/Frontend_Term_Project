@@ -58,7 +58,7 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
             <span>New Flashcard Deck</span>
           </Button>
         </header>
-        <section className="flashcardsList">
+        <section className="flashcardsList cardGrid">
           {decks.map((deck, index) => (
             <Card
               key={index}
