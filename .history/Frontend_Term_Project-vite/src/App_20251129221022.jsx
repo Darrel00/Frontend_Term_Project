@@ -89,6 +89,7 @@ function App() {
         </>
       )}
 
+      {page === 'deck' && <FlashcardsDeckPage setPage={setPage} />}
       {page === 'quiz' && <QuizPage setPage={setPage} quizzes={quizzes} setCurrentQuizIndex={setCurrentQuizIndex} setQuizzes={setQuizzes} />}
       {page === 'quizedit' && <QuizEditPage setPage={setPage} quiz={quizzes[currentQuizIndex]} onUpdateQuiz={(updatedQuiz) => updateQuiz(currentQuizIndex, updatedQuiz)} />}
       {page === 'quizstart' && <QuizTaker setPage={setPage} quiz={quizzes[currentQuizIndex]} score={score} setScore={setScore} />}
