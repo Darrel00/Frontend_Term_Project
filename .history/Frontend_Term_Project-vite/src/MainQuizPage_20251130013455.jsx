@@ -71,14 +71,9 @@ function QuizPage({ setPage, quizzes, setCurrentQuizIndex, setQuizzes }) {
       <main className="quizMain">
         <header className="quizHeader">
           <h1 className="quizTitle">Your Quizzes</h1>
-          <div className="quizHeaderButtons">
-            <Button onClick={() => setShowQuizTutorial(true)}>
-              <span>How to use</span>
-            </Button>
-            <Button>
-              <span onClick={() => setPage('newquiz')}>Create New Quiz</span>
-            </Button>
-          </div>
+          <Button>
+            <span onClick={() => setPage('newquiz')}>Create New Quiz</span>
+          </Button>
         </header>
 
         <section className="quizList">

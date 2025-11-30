@@ -92,14 +92,9 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
       <main className="flashcardsMain">
         <header className="flashcardsHeader">
           <h1 className="flashcardsTitle">Your Flashcard Decks</h1>
-          <div className="flashcardsHeaderButtons">
-            <Button onClick={() => setShowFlashcardsTutorial(true)}>
-              <span>How to use</span>
-            </Button>
-            <Button onClick={() => setShowDeckModal(true)}>
-              <span>New Flashcard Deck</span>
-            </Button>
-          </div>
+          <Button onClick={() => setShowDeckModal(true)}>
+            <span>New Flashcard Deck</span>
+          </Button>
         </header>
         <section className="flashcardsList">
           {decks.map((deck, index) => (

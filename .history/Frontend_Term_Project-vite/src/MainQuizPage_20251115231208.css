@@ -18,12 +18,6 @@
   margin-bottom: 2.5rem;
 }
 
-.quizHeaderButtons {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
 .quizTitle {
   font-size: 2.25rem;
   font-weight: 700;

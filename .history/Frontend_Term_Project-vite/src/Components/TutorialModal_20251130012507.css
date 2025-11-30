@@ -1,0 +1,156 @@
+.tutorialModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.tutorialModalContent {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  animation: tutorialModalSlideIn 0.3s ease-out;
+}
+
+@keyframes tutorialModalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tutorialModalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px 16px 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.tutorialModalTitle {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tutorialExitButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.tutorialExitButton:hover {
+  color: #333;
+}
+
+.tutorialModalBody {
+  padding: 24px;
+}
+
+.tutorialSection {
+  margin-bottom: 24px;
+}
+
+.tutorialSection:last-child {
+  margin-bottom: 0;
+}
+
+.tutorialSectionTitle {
+  margin: 0 0 12px 0;
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tutorialSectionText {
+  margin: 0 0 16px 0;
+  color: #666;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.tutorialList {
+  margin: 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.tutorialListItem {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.tutorialModalFooter {
+  padding: 16px 24px 24px 24px;
+  text-align: center;
+}
+
+.tutorialGotItButton {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tutorialGotItButton:hover {
+  background: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tutorialModalContent {
+    width: 95%;
+    max-height: 90vh;
+  }
+  
+  .tutorialModalHeader {
+    padding: 20px 20px 12px 20px;
+  }
+  
+  .tutorialModalBody {
+    padding: 20px;
+  }
+  
+  .tutorialModalFooter {
+    padding: 12px 20px 20px 20px;
+  }
+  
+  .tutorialModalTitle {
+    font-size: 20px;
+  }
+  
+  .tutorialSectionTitle {
+    font-size: 16px;
+  }
+  
+  .tutorialSectionText,
+  .tutorialListItem {
+    font-size: 14px;
+  }
+}
