@@ -7,9 +7,9 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-} 
+}
 
-.word{
+.word {
   color: #2A1B64;
 }
 
@@ -21,12 +21,12 @@
 
 .cardButtons {
   position: absolute;
-  top: 1.25rem; 
+  top: 1.25rem;
   left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 1.25rem; 
+  padding: 0 1.25rem;
 }
 
 .editButton, .deleteButton {
@@ -34,22 +34,42 @@
   font-family: Poppins;
   color: white;
   border: none;
-  width: 6rem;               
-  height: 2.5rem;            
+  width: 6rem;
+  height: 2.5rem;
   cursor: pointer;
   font-weight: bold;
   font-size: 0.875rem;
-  box-sizing: border-box;    
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;               
+  padding: 0;
 }
 
 .viewButton {
   position: absolute;
   bottom: 1rem;
   left: 1.25rem;
+  background-color: #6340EE;
+  font-family: Poppins;
+  color: white;
+  border: none;
+  width: 6rem;
+  height: 2.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.flipButton {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.25rem;
   background-color: #6340EE;
   font-family: Poppins;
   color: white;

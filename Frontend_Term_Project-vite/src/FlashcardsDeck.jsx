@@ -6,7 +6,7 @@ import Footer from "./Components/Footer.jsx";
 import CardModal from "./Components/CardModal.jsx";
 import DeckModal from "./Components/DeckModal.jsx";
 import { useState, useEffect } from "react";
- 
+
 function FlashcardsDeckPage({ setPage, activeDeck }) {
   const [deckName, setDeckName] = useState(activeDeck);
   const [cards, setCards] = useState([]);
@@ -106,7 +106,7 @@ function FlashcardsDeckPage({ setPage, activeDeck }) {
               showView={false}
               onEdit={() => handleEdit(index)}
               onDelete={() => handleDelete(index)}
-              setPage={() => handleFlip(index)}
+              onFlip={() => handleFlip(index)}
             />
           ))}
           <button type="button" className="addCardButton" onClick={() => setShowCardModal(true)}>
