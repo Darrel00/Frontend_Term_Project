@@ -1,5 +1,5 @@
 .deckContainer {
-  background-color: #EFECFD;
+  background-color: #E6F7E6;
   padding: 4rem 4rem;
   min-height: 100vh;
   font-family: Poppins, sans-serif;
@@ -11,7 +11,7 @@
 .deckContainer h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -28,12 +28,12 @@
 .deckHeader h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin: 0;
 }
 
 .customButton {
-  background-color: #6340EE;
+  background-color: #22A854;
   color: white;
   font-size: 1.25rem;
   font-weight: 700;
@@ -52,7 +52,7 @@
 }
 
 .addCardButton {
-    background-color: #EFECFD;
+    background-color: #E6F7E6;
     color: white;
     width: 22rem;
     height: 12.5rem;
@@ -60,11 +60,11 @@
     font-weight: 600;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
-    border: 5px dashed #CFC4FA;
+    border: 5px dashed #B8E6B8;
 }
 
 h3{
-    color:  #2A1B64;
+    color:  #1A5A2A;
     text-align: center;
     font-family: Poppins;
     font-size: 2rem;
@@ -79,7 +79,7 @@ h3{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #6340EE;
+    background-color: #22A854;
     display: flex;
     justify-content: center;
     align-items: center;

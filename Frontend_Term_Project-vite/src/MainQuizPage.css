@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #EFECFD;
+  background-color: #E6F7E6;
   font-family: Poppins;
 }
 
@@ -27,7 +27,7 @@
 .quizTitle {
   font-size: 2.25rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
 }
 
 .quizList {

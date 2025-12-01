@@ -1,5 +1,5 @@
 .card {
-  background-color: #CFC4FA;
+  background-color: #B8E6B8;
   width: 22rem;
   height: 12.5rem;
   position: relative;
@@ -11,7 +11,7 @@
 }
 
 .word {
-  color: #2A1B64;
+  color: #1A5A2A;
 }
 
 .cardContent {
@@ -31,7 +31,7 @@
 }
 
 .editButton, .deleteButton {
-  background-color: #6340EE;
+  background-color: #22A854;
   font-family: Poppins;
   color: white;
   border: none;
@@ -58,7 +58,7 @@
   position: absolute;
   bottom: 1rem;
   left: 1.25rem;
-  background-color: #6340EE;
+  background-color: #22A854;
   font-family: Poppins;
   color: white;
   border: none;
@@ -78,7 +78,7 @@
   position: absolute;
   bottom: 1rem;
   right: 1.25rem;
-  background-color: #6340EE;
+  background-color: #22A854;
   font-family: Poppins;
   color: white;
   border: none;

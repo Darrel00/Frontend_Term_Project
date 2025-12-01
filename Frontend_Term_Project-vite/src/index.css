@@ -7,12 +7,12 @@ html, body {
 body {
   margin: 0;
   font-family: Poppins;
-  background-color: #CFC4FA;
+  background-color: #B8E6B8;
   overflow-x: hidden;
 }
 
 nav {
-  background-color: #6340EE;
+  background-color: #22A854;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ nav span {
 }
 
 .intro {
-  background-color: #CFC4FA;
+  background-color: #B8E6B8;
   text-align: center;
   padding: 5rem 2rem;
 }
@@ -43,14 +43,14 @@ nav span {
 .introHeading {
   font-size: 2rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin-bottom: 1rem;
 }
 
 .introText {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2A1B64;
+  color: #1A5A2A;
   max-width: 60rem;
   margin: 0 auto;
 }
@@ -73,7 +73,7 @@ nav span {
 }
 
 .features {
-  background-color: #EFECFD;
+  background-color: #E6F7E6;
   padding: 4rem;
   overflow: hidden;
 }
@@ -96,7 +96,7 @@ nav span {
   width: 50%;
   font-size: 2rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   text-align: right;
@@ -107,7 +107,7 @@ nav span {
   width: 50%;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin: 0;
   text-align: right;
 }
@@ -132,7 +132,7 @@ nav span {
   width: 50%;
   font-size: 2rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -142,16 +142,16 @@ nav span {
   width: 50%;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #2A1B64;
+  color: #1A5A2A;
   margin: 0;
   width: 20rem;
 }
 
 .callToAction {
-  background-color: #CFC4FA;
+  background-color: #B8E6B8;
   text-align: center;
   padding: 4rem 4rem;
-  color: #2A1B64;
+  color: #1A5A2A;
 }
 
 .callToAction h2 {
@@ -163,7 +163,7 @@ nav span {
 
 .callToAction button {
   font-family: Poppins;
-  background-color: #6340EE;
+  background-color: #22A854;
   color: white;
   font-size: 1.25rem;
   font-weight: 600;

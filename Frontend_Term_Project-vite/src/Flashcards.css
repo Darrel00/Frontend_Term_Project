@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #EFECFD;
+  background-color: #E6F7E6;
   font-family: Poppins;
 } 
 
@@ -27,7 +27,7 @@
 .flashcardsTitle {
   font-size: 2.25rem;
   font-weight: 700;
-  color: #2A1B64;
+  color: #1A5A2A;
 }
 
 .flashcardsList {
@@ -42,7 +42,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #6340EE;
+    background-color: #22A854;
     display: flex;
     justify-content: center;
     align-items: center;
