@@ -47,7 +47,7 @@ function App() {
           </nav> */}
           <div className="intro">
             <h2 className="introHeading">
-              Welcome to ScholarDeck! Your new studying companion.
+              Welcome to ScholarDeck! Your new study
             </h2>
             <h3 className="introText">
               Here you can create, edit, and organize flashcards on various topics. There is also a quiz mode where you can put your knowledge to the test!
