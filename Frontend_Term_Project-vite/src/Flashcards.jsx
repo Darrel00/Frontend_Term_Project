@@ -6,11 +6,11 @@ import DeckModal from './Components/DeckModal.jsx';
 import TutorialModal from './Components/TutorialModal.jsx';
 import './Flashcards.css';
 import { useState, useEffect } from 'react';
-
+ 
 function FlashcardsPage({ setPage, setActiveDeck }) {
   const [decks, setDecks] = useState(() => {
     const saved = localStorage.getItem("decks");
-    return saved ? JSON.parse(saved) : ["French Vocabulary"];
+    return saved ? JSON.parse(saved) : [""];
   });
 
   const [showDeckModal, setShowDeckModal] = useState(false);
@@ -101,13 +101,15 @@ function FlashcardsPage({ setPage, setActiveDeck }) {
             </Button>
           </div>
         </header>
-        <section className="flashcardsList">
+        <section className="flashcardsList cardGrid">
           {decks.map((deck, index) => (
             <Card
               key={index}
               word={deck}
               showEdit={false}
               showDelete={true}
+              showView={true}
+              showFlip={false}
               onEdit={() => {}}
               onDelete={() => handleDeleteDeck(index)}
               setPage={() => handleOpenDeck(deck)}

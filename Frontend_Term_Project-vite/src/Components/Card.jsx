@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Card.css';
 
-const Card = ({ word, showEdit, showDelete, isCorrect, showView, onEdit, onDelete, setPage, type = "default" }) => {
+const Card = ({ word, showEdit, showDelete, isCorrect, showView, showFlip, onEdit, onDelete, onFlip, setPage, type = "default" }) => {
   const showButtons = type !== "display";
   return (
     <div className={`card ${isCorrect && type === "display" ? "card--correct" : ""}`}>
@@ -17,6 +17,7 @@ const Card = ({ word, showEdit, showDelete, isCorrect, showView, onEdit, onDelet
         </h3>
       </div>
       {showView && <button className="viewButton" onClick={setPage}>View</button>}
+      {showFlip && <button className="flipButton" onClick={onFlip}>Flip</button>}
     </div>
   );
 };

@@ -15,5 +15,5 @@ function CardModal({ frontInput, backInput, setFrontInput, setBackInput, onSave,
     </div>
   );
 }
-
+ 
 export default CardModal;

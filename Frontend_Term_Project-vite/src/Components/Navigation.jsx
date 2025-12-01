@@ -11,4 +11,4 @@ function Navigation({ setPage }) {
   );
 }
 
-export default Navigation;
+export default Navigation; 

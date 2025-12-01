@@ -104,9 +104,10 @@ function FlashcardsDeckPage({ setPage, activeDeck }) {
               showEdit={true}
               showDelete={true}
               showView={false}
+              showFlip={true}
               onEdit={() => handleEdit(index)}
               onDelete={() => handleDelete(index)}
-              setPage={() => handleFlip(index)}
+              onFlip={() => handleFlip(index)}
             />
           ))}
           <button type="button" className="addCardButton" onClick={() => setShowCardModal(true)}>
